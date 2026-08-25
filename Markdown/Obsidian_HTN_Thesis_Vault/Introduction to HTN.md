@@ -1,0 +1,36 @@
+---
+type: thesis-section
+status: active
+tags:
+  - thesis/htn
+  - automated-planning
+---
+
+# Introduction to HTN
+
+Paradigm in AI planning for automated planning. Classical planning focuses on finding sequence to get from point A to point B while Hierarchical Task Networks focus on high-level decomposition until high-level tasks become manageable, directly executable sub-tasks.  
+Three key components within HTN are Tasks, Methods and, Initial State and Goal.Tasks are the “what” of the plan. Primitive tasks are basic actions that can be executed in the environment. Non-primitive tasks are compound tasks, these are high-level tasks composed  of several primitive tasks. Methods are the “how”. They are the recipe telling the planner how to decompose a specific task into sub-tasks. Initial State describes the world at the beginning.
+
+Possible reference for search on distributed planning in a network of clusters. This example focuses on a LAN:
+
+University of Sherbrooke: Kabanzat
+
+Scope of focus still very broad:
+
+- Concept implementation of HTN in a distributed system  
+- Comparison of planning methods in a distributed system
+
+Unresolved questions:
+
+- What specific aspect or focus  
+- Scope of application domain  
+- Concept analysis of a possible implementation design
+
+Direction:
+
+- Context of aerial system, concept of a distributed system using HTN  
+- Deterministic system
+
+---
+A lot of literature primarily focused on theoretical foundations on HTN. Less focus on solutions for application contexts. Conventionally, HTN is used within single core, single computer systems. The question to solve is what possible implementation can be used for a distributed system. A starting point is provided through [GTPyhop](https://github.com/dananau/GTPyhop/tree/main), an open source planning system by Dana Nau from University of Maryland.  
+Classically, HTN is best suited for deterministic, closed-world systems which has already been extensively studied due to focus on planners rather than actors as stated in this paper from 2014. [1-s2.0-S0004370213001173-main.pdf](https://drive.google.com/file/d/1DlHenoNkVu2mb9aOMb210BqF8Dp3SHsH/view?usp=drive_link) Many real-world systems operate in dynamically changing environments requiring continuous adaptation in planning and decision making.

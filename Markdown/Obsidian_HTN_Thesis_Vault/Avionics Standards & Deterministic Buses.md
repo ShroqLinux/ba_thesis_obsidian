@@ -1,0 +1,31 @@
+---
+type: thesis-section
+status: active
+tags:
+  - thesis/avionics
+  - safety-critical
+  - bus-standards
+---
+
+# Avionics Standards & Deterministic Buses
+
+Note 20/08/26: Reasoning for choices in framing and exclusion of certain topics
+
+This will later require formal rewriting with a detailed explanation on selection of concepts starting at choice of planner, going toward introduction to existing research on redundancy engineering (focused on TMR) and principles in distributed computing.
+
+First would be a short introduction on fundamentals of an HTN. The second part is a short explanation of how SHOP2 works and connecting with it the reason for selecting this planner rather than other planners. The reason for SHOP2 is the domain constraint for determinism within individual components in avionics. This allows for predictable behavior with default / fallback mechanisms which can be cleanly defined statically which immediately excludes planners using heuristics or stochastic methods. The DFS-style search plays an important role here as it is a deterministic search algorithm for the decision tree.  
+The next part is the assumption on network and message delivery. The network of this distributed architecture is kept static to exclude the topic of dynamic network management. This would otherwise also affect how the planner would determine split of tasks and coordination of planning. A static network allows for a deterministic definition of behavior of said network because all knowledge is based on a closed-world here. Then connecting to network and communication is the assumption of guaranteed message delivery which also has been researched extensively for safety-critical systems, e.g. avionics, energy, medicine, etc. (add some sources for this; furthermore look into **Ethernet AFDX** and **ARINC 429** as examples).
+
+On the topic of redundancy, there are many different types of redundancy as stated earlier. The decision for TMR is rooted in the common use of it within avionics and its adaptability in architecture both in hardware and software which is necessary for software constraints (coding standards and compliance for certification) as well as hardware constraints (limit in available compute power and working memory). Later, further reasoning will be required for the choice of architectural framework using TMR as a baseline to evaluate trade-offs of active replication and majority voting.
+
+After a short review with Gemini came some more connecting topics for the reasoning. An explanation on why non-deterministic or randomized AI planners complicate safety certification can be briefly linked to compliance with standard DO-178C (not too long on this, keep it short). Same goes for safety-critical standards with offline pre-configuration of network topology.
+
+Note 25/08/26: Checking information and reasoning with standards for avionic systems, message delivery and constraints at lower level to keep in mind, keep it restricted
+
+The framing on guaranteed message delivery is backed by existing standards for avionic bus systems such as MIL-STD-1553, Ethernet AFDX (ARINC 664) and ARINC 429. The source of the standard for milbus is publicly accessible through the American DoD. For ARINC this may require a request externally as these standards are proprietary.  
+Based on existing implementations with Milbus and AFDX, it can be safely assumed that message delivery is guaranteed, thus allowing the focus of scope to be restricted on HTN planning with redundancy and the system is defined to have no communication problems.
+
+---
+See also:
+- [[Bridge to Redundancy]]
+- [[Decisions log]]

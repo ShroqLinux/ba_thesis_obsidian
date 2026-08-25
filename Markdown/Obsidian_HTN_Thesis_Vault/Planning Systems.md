@@ -1,0 +1,19 @@
+---
+type: thesis-section
+status: active
+tags:
+  - thesis/htn
+  - planners/shop2
+---
+
+# Planning Systems
+
+Two planners that serve as a starting point for introduction into this subject are SHOP and SHOP2. SHOP is “Simple Hierarchical Ordered Planner” which decomposes tasks recursively into directly executable primitive tasks exactly in the order they are to be executed. This significantly reduces complexity in decision of sequence in which tasks run. SHOP2 adds the possibility of partial ordering where subtasks from different compound tasks can be interleaved (Nau et al., 2003). There are many more planners to be explored. The SHOP planners are typically used with a DFS-style search through their decision trees. Other planners make use of different search methods (look up some examples for this). I will restrict the frame here to use SHOP planners where the main topic becomes the parallelization of the search itself and in which variants this is possible.
+
+Note: look into this more extensively.
+
+---
+See also:
+- [[Parallelization of DFS]]
+- [[Introduction to HTN]]
+- [[Literature Bibliography]]

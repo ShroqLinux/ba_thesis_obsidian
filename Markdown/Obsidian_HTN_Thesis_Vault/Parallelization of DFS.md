@@ -1,0 +1,25 @@
+---
+type: thesis-section
+status: active
+tags:
+  - thesis/search
+  - parallelization
+---
+
+# Parallelization of DFS
+
+This part addresses the second idea of how HTN can be used in a distributed network. The main concept which needs to be analyzed is whether it’s possible to split the decision tree of an HTN across several nodes. HTNs typically use a DFS-style search algorithm (in SHOP planners) from high-level target, or as stated in Nau et al. (2003) it’s compound tasks, down to primitive task level. The condition of stopping is dependent on the search finding a valid method of solution at which the search ends and using it as the only relevant solution, thus reducing the time required to search through all possible combinations of which methods could solve the problem. One possibility would be to split the decision tree among many different nodes, effectively creating sub-trees which are distributed throughout the network assuming a static network of nodes. There are several aspects to consider with this approach. First is which node is used to start the search and whether it’s determined dynamically. The second aspect is how the sub-trees are linked together in case of backtracking requiring a jump to a branch on a different node within the same node cluster. One implementation of this has already been down, GitLab repo is available to look into this. Here I am assuming guaranteed delivery of messaging within the node cluster.  
+Two other concepts which were described by Gemini were work stealing and stack splitting as well as randomized parallel DFS. In work stealing when a thread finishes its own part in search, it becomes a ‘thief’ and steals from the bottom of a currently active thread that’s still executing. Randomized parallel DFS lets multiple threads run concurrently through the same tree; whenever one thread finds a solution, it terminates execution of all other threads (find more information in research on this). Meaning the search is entirely optimized for finding ‘the first solution possible’ rather than finding the most cost- or resource-efficient solution. Randomized parallel DFS would search through the same exact tree on multiple threads but explore different sub-branches (also add source here if it was already researched). Intuitively I was already questioning this method, as searching with DFS on the same tree would be entirely deterministic resulting in a ‘same path’ of search across all threads giving identical execution times for searches. The actual method does account for this part by shuffling which child node is explored at a fork point when applicable.
+
+Another possibility that opens up with this is in the case of redundant systems where multiple nodes would be running the same process. This leads to clusters where multiple nodes can be used for both redundancy as well as parallel searches in HTN.
+
+Note: you can formally restrict the frame of thesis with some fixed assumptions. Static network cluster, guaranteed message delivery, SHOP planner for DFS-style search
+
+Another question that may be relevant is whether the execution environment is treated as a closed-world with total fixed knowledge or if actors must be able to respond to external changes in a dynamic environment. This is more realistic in the context of an aerial system. This may not directly affect the HTN itself or its parallelization but it may affect how actors across different nodes execute the ‘found’ solution from any node.
+
+To avoid too many forks in the road, it’s likely that I need to restrict my solution space to only one of these ideas on what types of parallelization I could write a concept for. Not entirely sure if this holds or not. Based on search results in Google Scholar, particularly HTN with redundant node systems hasn’t been analyzed much.
+
+---
+See also:
+- [[Planning Systems]]
+- [[Bridge to Redundancy]]

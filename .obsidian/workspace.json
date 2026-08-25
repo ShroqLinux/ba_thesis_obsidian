@@ -1,0 +1,249 @@
+{
+  "main": {
+    "id": "32418a5dd183bfef",
+    "type": "split",
+    "children": [
+      {
+        "id": "fcf1e8c383ff1d4e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7cbbbc76a4cd3c48",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b1674204bcc9b6b6",
+    "type": "split",
+    "children": [
+      {
+        "id": "7819640300f1b651",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a63417ad4fa3a4e5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "49d6affda3b30109",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1f75599e9110008e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "727153085cb63441",
+    "type": "split",
+    "children": [
+      {
+        "id": "21dfbeaeca0513a5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6677617e5f4ed764",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "ec1418e5ce0e3337",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "07f215b54c29e1b7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "0967f1f73685cc12",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "830043326aa54d6e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "3ffa45a623ce9453",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-agent-chat-view",
+              "state": {},
+              "icon": "copilot-agent",
+              "title": "Copilot Agent"
+            }
+          },
+          {
+            "id": "567b3986dab05663",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 486.65234375,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-importer:Import notes": false,
+      "copilot:Open Copilot Agent Chat": false,
+      "obsidian-textgenerator-plugin:Generate Text!": false,
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "7cbbbc76a4cd3c48",
+  "lastOpenFiles": [
+    "Markdown/Obsidian_HTN_Thesis_Vault/Bridge to Redundancy.md",
+    "Markdown/Obsidian_HTN_Thesis_Vault/Master Thesis Research - Hub.md",
+    "Markdown/Obsidian_HTN_Thesis_Vault/Avionics Standards & Deterministic Buses.md",
+    "Markdown/Obsidian_HTN_Thesis_Vault/Wireless communication & coordination.md",
+    "Markdown/Obsidian_HTN_Thesis_Vault/Planning Systems.md",
+    "Markdown/Obsidian_HTN_Thesis_Vault/Parallelization of DFS.md",
+    "Markdown/Obsidian_HTN_Thesis_Vault/Literature Bibliography.md",
+    "Markdown/Obsidian_HTN_Thesis_Vault/Introduction to HTN.md",
+    "Markdown/Obsidian_HTN_Thesis_Vault/Decisions log.md",
+    "Markdown/Research on HTN.docx.md",
+    "Markdown/Obsidian_HTN_Thesis_Vault",
+    "Markdown/thesis-research-master-2.md",
+    "copilot/skills/obsidian-markdown/SKILL.md",
+    "SHOP2 Architecture.md",
+    "Hierarchical Task Network Planning.md",
+    "Markdown/thesis-research-master.md",
+    "Untitled.md",
+    "Markdown",
+    "Markdown/gemini-code-1787665690585.md",
+    "Untitled",
+    "Decisions log.md",
+    "Wireless communication & coordination.md",
+    "Bridge to Redundancy.md",
+    "Deterministic Parallel DFS.md",
+    "Introduction to HTN.md",
+    "Parallelization of DFS.md",
+    "Planning Systems.md",
+    "SHOP Planner Family.md",
+    "Triple Modular Redundancy.md",
+    "copilot/copilot-conversations",
+    "copilot/skills/obsidian-cli/LICENSE",
+    "copilot/skills/obsidian-cli",
+    "copilot/skills/json-canvas/LICENSE",
+    "copilot/skills/json-canvas/references",
+    "copilot/skills/json-canvas",
+    "copilot/skills/obsidian-bases/LICENSE"
+  ]
+}
