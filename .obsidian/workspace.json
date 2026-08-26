@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fcf1e8c383ff1d4e",
+        "id": "fc3ced20ea355102",
         "type": "tabs",
         "children": [
           {
-            "id": "7cbbbc76a4cd3c48",
+            "id": "0612d1cd5031d518",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -188,8 +188,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 486.65234375,
-    "collapsed": true
+    "width": 422.58984375
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -202,13 +201,39 @@
       "bases:Create new base": false,
       "obsidian-importer:Import notes": false,
       "copilot:Open Copilot Agent Chat": false,
-      "obsidian-textgenerator-plugin:Generate Text!": false,
-      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7cbbbc76a4cd3c48",
+  "active": "a63417ad4fa3a4e5",
   "lastOpenFiles": [
+    "gemini-code-1787725659977.txt",
+    "Untitled.md",
+    "copilot/skills/obsidian-cli/SKILL.md",
+    "copilot/skills/obsidian-cli/LICENSE",
+    "copilot/skills/obsidian-cli",
+    "copilot/skills/json-canvas/SKILL.md",
+    "copilot/skills/json-canvas/LICENSE",
+    "copilot/skills/json-canvas/references/EXAMPLES.md",
+    "copilot/skills/json-canvas/references",
+    "copilot/skills/json-canvas",
+    "copilot/skills/obsidian-bases/SKILL.md",
+    "copilot/skills/obsidian-bases/LICENSE",
+    "copilot/skills/obsidian-bases/references/EXAMPLES.md",
+    "copilot/skills/obsidian-bases/references/FUNCTIONS_REFERENCE.md",
+    "copilot/skills/obsidian-bases/references",
+    "copilot/skills/obsidian-bases",
+    "copilot/skills/obsidian-markdown/SKILL.md",
+    "copilot/skills/obsidian-markdown/LICENSE",
+    "copilot/skills/obsidian-markdown/references/PROPERTIES.md",
+    "copilot/skills/obsidian-markdown/references/EMBEDS.md",
+    "copilot/skills/obsidian-markdown/references/CALLOUTS.md",
+    "copilot/skills/obsidian-markdown/references",
+    "copilot/skills/symposium-publish/SKILL.md",
+    "copilot/skills/copilot-fetch-x/SKILL.md",
+    "copilot/skills/copilot-youtube-transcript/SKILL.md",
+    "copilot/skills/copilot-read-pdf/SKILL.md",
+    "copilot/skills/copilot-web-fetch/SKILL.md",
+    "copilot/skills/copilot-web-search/SKILL.md",
     "Markdown/Obsidian_HTN_Thesis_Vault/Bridge to Redundancy.md",
     "Markdown/Obsidian_HTN_Thesis_Vault/Master Thesis Research - Hub.md",
     "Markdown/Obsidian_HTN_Thesis_Vault/Avionics Standards & Deterministic Buses.md",
@@ -216,34 +241,6 @@
     "Markdown/Obsidian_HTN_Thesis_Vault/Planning Systems.md",
     "Markdown/Obsidian_HTN_Thesis_Vault/Parallelization of DFS.md",
     "Markdown/Obsidian_HTN_Thesis_Vault/Literature Bibliography.md",
-    "Markdown/Obsidian_HTN_Thesis_Vault/Introduction to HTN.md",
-    "Markdown/Obsidian_HTN_Thesis_Vault/Decisions log.md",
-    "Markdown/Research on HTN.docx.md",
-    "Markdown/Obsidian_HTN_Thesis_Vault",
-    "Markdown/thesis-research-master-2.md",
-    "copilot/skills/obsidian-markdown/SKILL.md",
-    "SHOP2 Architecture.md",
-    "Hierarchical Task Network Planning.md",
-    "Markdown/thesis-research-master.md",
-    "Untitled.md",
-    "Markdown",
-    "Markdown/gemini-code-1787665690585.md",
-    "Untitled",
-    "Decisions log.md",
-    "Wireless communication & coordination.md",
-    "Bridge to Redundancy.md",
-    "Deterministic Parallel DFS.md",
-    "Introduction to HTN.md",
-    "Parallelization of DFS.md",
-    "Planning Systems.md",
-    "SHOP Planner Family.md",
-    "Triple Modular Redundancy.md",
-    "copilot/copilot-conversations",
-    "copilot/skills/obsidian-cli/LICENSE",
-    "copilot/skills/obsidian-cli",
-    "copilot/skills/json-canvas/LICENSE",
-    "copilot/skills/json-canvas/references",
-    "copilot/skills/json-canvas",
-    "copilot/skills/obsidian-bases/LICENSE"
+    "Markdown/Obsidian_HTN_Thesis_Vault/Introduction to HTN.md"
   ]
 }

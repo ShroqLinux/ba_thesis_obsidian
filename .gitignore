@@ -1,0 +1,26 @@
+# Obsidian Workspace & Cache (UI state, open tabs, graph layout)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+.obsidian/cache/
+.obsidian/.trash/
+
+# Copilot plugin local index, vector store, and chat logs
+copilot/
+.obsidian/plugins/copilot/data.json
+.obsidian/plugins/copilot-custom/
+
+# OS-specific metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor caches
+.vscode/
+.idea/
+
+# Local environment variables / keys
+.env
+*.local
+
+copilot/skills/
