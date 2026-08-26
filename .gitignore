@@ -23,4 +23,8 @@ desktop.ini
 .env
 *.local
 
-copilot/skills/
+.copilot/
+.claude/
+.obsidian/
+.opencode/
+.agents/
