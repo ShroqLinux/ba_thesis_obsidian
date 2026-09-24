@@ -14,3 +14,4 @@ tags:
 - **Bonna et al. (2019):** Bonna, R., Loubach, D.S., Sander, I. and Söderquist, I., 2019, October. Triple modular redundancy based on runtime reconfiguration and formal models of computation. In *Proceedings of the 10th Aerospace Technology Congress* (pp. 145-151).
 - **Hamilton et al. (2019):** Hamilton, N., Graham, S., Carbino, T., Petrosky, J. and Betances, A., 2019. Adaptive-Hybrid Redundancy with Error Injection. *Electronics*, *8*(11), p.1266.
 - **Djambazova & Andreev (2023):** Djambazova, E. and Andreev, R., 2023. Redundancy management in dependable distributed real-time systems. *Probl. Eng. Cybern. Robot*, *79*, pp.37-54.
+- **Parhami, B. (1994)**: Voting algorithms. _IEEE transactions on reliability_, _43_(4), pp.617-629.
