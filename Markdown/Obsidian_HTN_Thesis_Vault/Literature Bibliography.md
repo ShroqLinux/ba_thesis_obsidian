@@ -16,3 +16,4 @@ tags:
 - Nau, D.S., Au, T.C., Ilghami, O., Kuter, U., Murdock, J.W., Wu, D. and Yaman, F., 2003. SHOP2: An HTN planning system. _Journal of artificial intelligence research_, _20_, pp.379-404.
 - Parhami, B., 1994. Voting algorithms. _IEEE transactions on reliability_, _43_(4), pp.617-629.
 - Peng, P., Soljanin, E. and Whiting, P., 2021. Diversity/parallelism trade-off in distributed systems with redundancy. _IEEE transactions on information theory_, _68_(2), pp.1279-1295.
+- Tanenbaum, A.S. and Van Steen, M., 2017. _Distributed systems_ (pp. 298-303). CreateSpace Independent Publishing Platform.
