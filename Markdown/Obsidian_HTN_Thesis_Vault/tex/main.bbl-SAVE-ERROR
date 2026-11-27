@@ -1,0 +1,1834 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{aziz_systematic_2026}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=a107183a2333169229629e27594decd7}{%
+           family={Aziz},
+           familyi={A\bibinitperiod},
+           given={Sumair},
+           giveni={S\bibinitperiod}}}%
+        {{hash=042fc42102734363763845290d8aef98}{%
+           family={Chetty},
+           familyi={C\bibinitperiod},
+           given={Girija},
+           giveni={G\bibinitperiod}}}%
+        {{hash=f9f2ac61f732f6857bcc1178326de967}{%
+           family={Goecke},
+           familyi={G\bibinitperiod},
+           given={Roland},
+           giveni={R\bibinitperiod}}}%
+        {{hash=15c73e7012e3b951bbfb09a6640b9d16}{%
+           family={Fernandez-Rojas},
+           familyi={F\bibinithyphendelim R\bibinitperiod},
+           given={Raul},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{5cddc6cd007be8c6b44da739bab10cbf}
+      \strng{fullhash}{55b20aebf791a5fc4e714cf093f5dbb4}
+      \strng{fullhashraw}{55b20aebf791a5fc4e714cf093f5dbb4}
+      \strng{bibnamehash}{55b20aebf791a5fc4e714cf093f5dbb4}
+      \strng{authorbibnamehash}{55b20aebf791a5fc4e714cf093f5dbb4}
+      \strng{authornamehash}{5cddc6cd007be8c6b44da739bab10cbf}
+      \strng{authorfullhash}{55b20aebf791a5fc4e714cf093f5dbb4}
+      \strng{authorfullhashraw}{55b20aebf791a5fc4e714cf093f5dbb4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Healthcare Embedded Systems (HES) use biosensors to capture physiological data, analyse it with advanced algorithms, and provide timely alerts during emergencies. These systems enhance healthcare delivery by supporting diagnosis, early symptom detection, and disease prediction. Despite extensive research on data analysis techniques in healthcare, selecting real-time methods for specific embedded hardware remains challenging. This review aims at summarising and synthesising existing literature to: (a) identify the healthcare challenges addressed by HES and the types of biosignals employed, (b) explore the embedded platforms utilised for implementing HES, and (c) examine the data analysis techniques used for real-time HES applications. A systematic search across three electronic databases (2015-2024), identified 50 relevant studies. These studies span various application domains, biosensing modalities, feature extraction methods, and machine learning and deep learning techniques. Raspberry Pi single-board computers emerged as the most popular embedded platform for implementing AI-based HES. Deep learning, especially convolutional neural networks, dominated, with cardiac health as the primary focus. While the reviewed studies demonstrate promising results, they are often constrained by specific experimental contexts. This review offers a comprehensive overview of real-time data analysis in HES and highlights key opportunities for future research to advance the field.}
+      \field{day}{31}
+      \field{issn}{0360-0300, 1557-7341}
+      \field{journaltitle}{ACM Computing Surveys}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{9}
+      \field{shortjournal}{ACM Comput. Surv.}
+      \field{title}{A {{Systematic Literature Review}} of {{Healthcare Embedded Systems Using AI}}-Based {{Biosignal Analysis}}}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{volume}{58}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 42}
+      \range{pages}{42}
+      \verb{doi}
+      \verb 10.1145/3793669
+      \endverb
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/10.1145/3793669
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/10.1145/3793669
+      \endverb
+    \endentry
+    \entry{dini_overview_2024}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=de1798d7eaf709e4beb52f87dfc738e5}{%
+           family={Dini},
+           familyi={D\bibinitperiod},
+           given={Pierpaolo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=6d69fc93510dedd275976acc16cfd4b2}{%
+           family={Diana},
+           familyi={D\bibinitperiod},
+           given={Lorenzo},
+           giveni={L\bibinitperiod}}}%
+        {{hash=46d78f39f6dec09bd0dca61f921e4508}{%
+           family={Elhanashi},
+           familyi={E\bibinitperiod},
+           given={Abdussalam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=22c41a4f542b395aaa6413d3bf75d2b9}{%
+           family={Saponara},
+           familyi={S\bibinitperiod},
+           given={Sergio},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b9a30a26b51b2e005fbbdfd610679db7}
+      \strng{fullhash}{4f9df09f37f6d987721a165b3f150010}
+      \strng{fullhashraw}{4f9df09f37f6d987721a165b3f150010}
+      \strng{bibnamehash}{4f9df09f37f6d987721a165b3f150010}
+      \strng{authorbibnamehash}{4f9df09f37f6d987721a165b3f150010}
+      \strng{authornamehash}{b9a30a26b51b2e005fbbdfd610679db7}
+      \strng{authorfullhash}{4f9df09f37f6d987721a165b3f150010}
+      \strng{authorfullhashraw}{4f9df09f37f6d987721a165b3f150010}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The integration of Artificial Intelligence (AI) models in Industrial Internet of Things (IIoT) systems has emerged as a pivotal area of research, offering unprecedented opportunities for optimizing industrial processes and enhancing operational efficiency. This article presents a comprehensive review of state-of-the-art AI models applied in IIoT contexts, with a focus on their utilization for fault prediction, process optimization, predictive maintenance, product quality control, cybersecurity, and machine control. Additionally, we examine the software and hardware tools available for integrating AI models into embedded platforms, encompassing solutions such as Vitis AI v3.5, TensorFlow Lite Micro v2.14, STM32Cube.AI v9.0, and others, along with their supported high-level frameworks and hardware devices. By delving into both AI model applications and the tools facilitating their deployment on low-power devices, this review provides a holistic understanding of AI-enabled IIoT systems and their practical implications in industrial settings.}
+      \field{day}{13}
+      \field{issn}{2079-9292}
+      \field{journaltitle}{Electronics}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{12}
+      \field{shortjournal}{Electronics}
+      \field{title}{Overview of {{AI-Models}} and {{Tools}} in {{Embedded IIoT Applications}}}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{volume}{13}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2322}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/electronics13122322
+      \endverb
+      \verb{file}
+      \verb /Users/shrey/Zotero/storage/DXPIRGFY/Dini et al. - 2024 - Overview of AI-Models and Tools in Embedded IIoT Applications.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2079-9292/13/12/2322
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2079-9292/13/12/2322
+      \endverb
+    \endentry
+    \entry{waheed_artificial_2026}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=671510cb90d687431058430421c5528a}{%
+           family={Waheed},
+           familyi={W\bibinitperiod},
+           given={Hafsa},
+           giveni={H\bibinitperiod}}}%
+        {{hash=42aa81bd6007a7f0e3a2513f557bc405}{%
+           family={Abro},
+           familyi={A\bibinitperiod},
+           given={Ghulam\bibnamedelimb E\bibnamedelima Mustafa},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2ef195634f9521569a7040854eda5e50}
+      \strng{fullhash}{2ef195634f9521569a7040854eda5e50}
+      \strng{fullhashraw}{2ef195634f9521569a7040854eda5e50}
+      \strng{bibnamehash}{2ef195634f9521569a7040854eda5e50}
+      \strng{authorbibnamehash}{2ef195634f9521569a7040854eda5e50}
+      \strng{authornamehash}{2ef195634f9521569a7040854eda5e50}
+      \strng{authorfullhash}{2ef195634f9521569a7040854eda5e50}
+      \strng{authorfullhashraw}{2ef195634f9521569a7040854eda5e50}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract The rapid transition toward sustainable and electrified transportation has accelerated the integration of artificial intelligence (AI) and embedded intelligence across modern mobility platforms. Despite significant advancements in electric and hybrid transportation systems, existing review studies predominantly focus on isolated aspects such as battery management, autonomous perception, or energy optimization, lacking a unified perspective on how AI-driven embedded systems collectively shape next-generation intelligent mobility ecosystems. This paper presents a comprehensive and forward-looking review of AI-enabled embedded architectures for electric and hybrid transport systems, while also incorporating original analytical insights on deep reinforcement learning (DRL)-based energy management and range optimization frameworks. The study critically examines AI-assisted battery state-of-charge estimation, predictive battery management systems (BMS), real-time sensor fusion, embedded vehicle health monitoring, digital twins (DTs), IoT-enabled diagnostics, and vehicle-to-everything (V2X) communication technologies. Furthermore, the review investigates AI-optimized propulsion architectures, modular power electronic interfaces, and intelligent perception systems integrating LiDAR, radar, and vision sensors for autonomous driving applications. Unlike conventional surveys, this work bridges the gap between embedded AI hardware, intelligent sensing, energy-aware control, and scalable mobility infrastructure within a unified framework. In addition, DRL-based dispatch strategies for battery energy storage systems (BESS) are comparatively analyzed against traditional rule-based and model predictive approaches, demonstrating improved adaptability and operational efficiency under dynamic and high-temperature operating conditions. The paper also highlights emerging opportunities associated with generative AI and large language models (LLMs) for vehicle health diagnostics, adaptive route planning, and intelligent energy management. Finally, critical research challenges related to explainability, computational complexity, battery aging, sensor reliability, and large-scale deployment are discussed to outline future directions toward practical, sustainable, and autonomous AI-driven transportation ecosystems.}
+      \field{day}{2}
+      \field{issn}{3059-4480}
+      \field{journaltitle}{Discover Vehicles}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{1}
+      \field{shortjournal}{Discov. Veh.}
+      \field{title}{Artificial Intelligence-Driven Embedded Sensing, Digital Twin, and Modular Electrified Vehicle Systems for Intelligent Sustainable Mobility}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{volume}{2}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{20}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s44465-026-00025-0
+      \endverb
+      \verb{file}
+      \verb /Users/shrey/Zotero/storage/Q5S536RP/Waheed and Abro - 2026 - Artificial intelligence-driven embedded sensing, digital twin, and modular electrified vehicle syste.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/10.1007/s44465-026-00025-0
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/10.1007/s44465-026-00025-0
+      \endverb
+    \endentry
+    \entry{Speed2018SEAD}{online}{}{}
+      \name{author}{2}{}{%
+        {{hash=cc354a39efddb827af7c033f3f889d4c}{%
+           family={Speed},
+           familyi={S\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1846bbdcdda55c75334ee8490d0fb970}{%
+           family={Stathopoulos},
+           familyi={S\bibinitperiod},
+           given={Panagiotis},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{aa4bceebe3d9e789d17a2fa94a905d76}
+      \strng{fullhash}{aa4bceebe3d9e789d17a2fa94a905d76}
+      \strng{fullhashraw}{aa4bceebe3d9e789d17a2fa94a905d76}
+      \strng{bibnamehash}{aa4bceebe3d9e789d17a2fa94a905d76}
+      \strng{authorbibnamehash}{aa4bceebe3d9e789d17a2fa94a905d76}
+      \strng{authornamehash}{aa4bceebe3d9e789d17a2fa94a905d76}
+      \strng{authorfullhash}{aa4bceebe3d9e789d17a2fa94a905d76}
+      \strng{authorfullhashraw}{aa4bceebe3d9e789d17a2fa94a905d76}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Introduction Destroying or disrupting an enemy’s air defence has long been central to any air campaign because it enables friendly air superiority/supremacy that protects friendly forces and allows freedom of movement. Without effective Suppression of Enemy Air Defence (SEAD), all other joint activities in a campaign carry a higher degree of risk. Historically, 15\% to}
+      \field{day}{2}
+      \field{hour}{10}
+      \field{langid}{american}
+      \field{minute}{55}
+      \field{month}{6}
+      \field{second}{43}
+      \field{timezone}{Z}
+      \field{title}{{{SEAD Operations}} of the {{Future}} - {{Joint Air Power Competence Centre}}}
+      \field{urlday}{27}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/shrey/Zotero/storage/VLJ8EM2R/sead-operations-of-the-future.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.japcc.org/articles/sead-operations-of-the-future/
+      \endverb
+      \verb{url}
+      \verb https://www.japcc.org/articles/sead-operations-of-the-future/
+      \endverb
+    \endentry
+    \entry{georgievski_htn_2015}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=5e23ae8bbf3a3bdc7f098c901b70e229}{%
+           family={Georgievski},
+           familyi={G\bibinitperiod},
+           given={Ilche},
+           giveni={I\bibinitperiod}}}%
+        {{hash=61c9418bf8975db8e23b20012c036b6a}{%
+           family={Aiello},
+           familyi={A\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{085524aea513ccec5ccee2d12034f2f1}
+      \strng{fullhash}{085524aea513ccec5ccee2d12034f2f1}
+      \strng{fullhashraw}{085524aea513ccec5ccee2d12034f2f1}
+      \strng{bibnamehash}{085524aea513ccec5ccee2d12034f2f1}
+      \strng{authorbibnamehash}{085524aea513ccec5ccee2d12034f2f1}
+      \strng{authornamehash}{085524aea513ccec5ccee2d12034f2f1}
+      \strng{authorfullhash}{085524aea513ccec5ccee2d12034f2f1}
+      \strng{authorfullhashraw}{085524aea513ccec5ccee2d12034f2f1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{00043702}
+      \field{journaltitle}{Artificial Intelligence}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{shortjournal}{Artificial Intelligence}
+      \field{shorttitle}{{{HTN}} Planning}
+      \field{title}{{{HTN}} Planning: {{Overview}}, Comparison, and Beyond}
+      \field{urlday}{5}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{volume}{222}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{124\bibrangedash 156}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.1016/j.artint.2015.02.002
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0004370215000247
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0004370215000247
+      \endverb
+    \endentry
+    \entry{nagele_colonels_2023}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=6fe196ba7bfe36f1c13ae0721b1ba1f8}{%
+           family={Nagele},
+           familyi={N\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{6fe196ba7bfe36f1c13ae0721b1ba1f8}
+      \strng{fullhash}{6fe196ba7bfe36f1c13ae0721b1ba1f8}
+      \strng{fullhashraw}{6fe196ba7bfe36f1c13ae0721b1ba1f8}
+      \strng{bibnamehash}{6fe196ba7bfe36f1c13ae0721b1ba1f8}
+      \strng{authorbibnamehash}{6fe196ba7bfe36f1c13ae0721b1ba1f8}
+      \strng{authornamehash}{6fe196ba7bfe36f1c13ae0721b1ba1f8}
+      \strng{authorfullhash}{6fe196ba7bfe36f1c13ae0721b1ba1f8}
+      \strng{authorfullhashraw}{6fe196ba7bfe36f1c13ae0721b1ba1f8}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{20}
+      \field{issn}{2813-0146}
+      \field{journaltitle}{Frontiers in Health Services}
+      \field{month}{2}
+      \field{shortjournal}{Front. Health Serv.}
+      \field{shorttitle}{Colonels and Generals, Chairs and Deans}
+      \field{title}{Colonels and Generals, Chairs and Deans: {{How}} the Military Educates Its Leaders and What We Can Learn in Academic Medicine}
+      \field{urlday}{13}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{volume}{3}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1075543}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3389/frhs.2023.1075543
+      \endverb
+      \verb{file}
+      \verb /Users/shrey/Zotero/storage/7ZPPKKH7/Nagele - 2023 - Colonels and generals, chairs and deans How the military educates its leaders and what we can learn.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.frontiersin.org/articles/10.3389/frhs.2023.1075543/full
+      \endverb
+      \verb{url}
+      \verb https://www.frontiersin.org/articles/10.3389/frhs.2023.1075543/full
+      \endverb
+    \endentry
+    \entry{maurya_reliability_2020}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=2bf884c93a2c32ef7cdc6ed867079ee8}{%
+           family={Maurya},
+           familyi={M\bibinitperiod},
+           given={Ankur},
+           giveni={A\bibinitperiod}}}%
+        {{hash=671c8385edda910ea29b5a5eadaa25b6}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Divya},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d61dd6c658fde87ede7a8d87b90c9f7}
+      \strng{fullhash}{3d61dd6c658fde87ede7a8d87b90c9f7}
+      \strng{fullhashraw}{3d61dd6c658fde87ede7a8d87b90c9f7}
+      \strng{bibnamehash}{3d61dd6c658fde87ede7a8d87b90c9f7}
+      \strng{authorbibnamehash}{3d61dd6c658fde87ede7a8d87b90c9f7}
+      \strng{authornamehash}{3d61dd6c658fde87ede7a8d87b90c9f7}
+      \strng{authorfullhash}{3d61dd6c658fde87ede7a8d87b90c9f7}
+      \strng{authorfullhashraw}{3d61dd6c658fde87ede7a8d87b90c9f7}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Abstract Safety‐critical systems are designed to prevent catastrophic consequences from failure, such as injury or death to humans and environmental damage. These must be carefully designed to ensure reliability requirements. The purpose of this paper is to identify the number of models in the reliability analysis of safety‐critical systems. To achieve this goal, we conducted a systematic review of 40 shortlisted studies. The selected studies are classified based on various techniques used in safety‐critical systems. This paper summarizes the literature review in the field of reliability of safety‐critical systems. The limitations of the literature are exquisitely represented. The international safety norms and applications of safety‐critical systems are discussed systematically in this paper. This paper emerges research trends, research challenges and insights of the researcher for future research direction in the area of safety‐critical systems.}
+      \field{issn}{0748-8017, 1099-1638}
+      \field{journaltitle}{Quality and Reliability Engineering International}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{7}
+      \field{shortjournal}{Quality \& Reliability Eng}
+      \field{shorttitle}{Reliability of Safety‐critical Systems}
+      \field{title}{Reliability of Safety‐critical Systems: {{A}} State‐of‐the‐art Review}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{volume}{36}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2547\bibrangedash 2568}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1002/qre.2715
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/qre.2715
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/qre.2715
+      \endverb
+    \endentry
+    \entry{yeh_triple-triple_1996}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=31f78432a506b64a7675c7d504b5b1c4}{%
+           family={Yeh},
+           familyi={Y\bibinitperiod},
+           given={Y.C.},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Aspen, CO, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{31f78432a506b64a7675c7d504b5b1c4}
+      \strng{fullhash}{31f78432a506b64a7675c7d504b5b1c4}
+      \strng{fullhashraw}{31f78432a506b64a7675c7d504b5b1c4}
+      \strng{bibnamehash}{31f78432a506b64a7675c7d504b5b1c4}
+      \strng{authorbibnamehash}{31f78432a506b64a7675c7d504b5b1c4}
+      \strng{authornamehash}{31f78432a506b64a7675c7d504b5b1c4}
+      \strng{authorfullhash}{31f78432a506b64a7675c7d504b5b1c4}
+      \strng{authorfullhashraw}{31f78432a506b64a7675c7d504b5b1c4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{1996 {{IEEE Aerospace Applications Conference}}. {{Proceedings}}}
+      \field{eventtitle}{1996 {{IEEE Aerospace Applications Conference}}. {{Proceedings}}}
+      \field{isbn}{978-0-7803-3196-9}
+      \field{title}{Triple-Triple Redundant 777 Primary Flight Computer}
+      \field{urlday}{11}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{volume}{1}
+      \field{year}{1996}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{293\bibrangedash 307}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1109/AERO.1996.495891
+      \endverb
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/document/495891/
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/495891/
+      \endverb
+    \endentry
+    \entry{ahlstrom_redundancy_2002}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=0ad9e8ef5e1eac18831a0bfe79ea0d8b}{%
+           family={Ahlstrom},
+           familyi={A\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=56250053cf57cdc371aa4001a3eb8f20}{%
+           family={Torin},
+           familyi={T\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d600e73d24d3103ef1db7a1e3b175646}{%
+           family={Fersan},
+           familyi={F\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3f642d5fe62757c131510b9f6c558bc8}{%
+           family={Nobrant},
+           familyi={N\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Irvine, CA, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{7838bceba491017a237f1383566577cd}
+      \strng{fullhash}{f94ee08fb39ddfe34bf97e77291783f7}
+      \strng{fullhashraw}{f94ee08fb39ddfe34bf97e77291783f7}
+      \strng{bibnamehash}{f94ee08fb39ddfe34bf97e77291783f7}
+      \strng{authorbibnamehash}{f94ee08fb39ddfe34bf97e77291783f7}
+      \strng{authornamehash}{7838bceba491017a237f1383566577cd}
+      \strng{authorfullhash}{f94ee08fb39ddfe34bf97e77291783f7}
+      \strng{authorfullhashraw}{f94ee08fb39ddfe34bf97e77291783f7}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{booktitle}{Proceedings. {{The}} 21st {{Digital Avionics Systems Conference}}}
+      \field{eventtitle}{21st {{Digital Avionics Systems Conference}}.}
+      \field{isbn}{978-0-7803-7367-9}
+      \field{shorttitle}{Redundancy Management in Distributed Flight Control Systems}
+      \field{title}{Redundancy Management in Distributed Flight Control Systems: Experience \& Simulations}
+      \field{urlday}{11}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{volume}{2}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{13C3-1-13C3\bibrangedash 7}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1109/DASC.2002.1053009
+      \endverb
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/document/1053009/
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/1053009/
+      \endverb
+    \endentry
+    \entry{kadry_reliability_2015}{incollection}{}{}
+      \name{author}{3}{}{%
+        {{hash=8b0ede7c9cfb4b1ce9e722ebf734b115}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Carmen},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ab4bc57b3139e10794a47a1710269995}{%
+           family={Gonzalez-Prida},
+           familyi={G\bibinithyphendelim P\bibinitperiod},
+           given={Vicente},
+           giveni={V\bibinitperiod}}}%
+        {{hash=8ed229dc4cd936fff1506366ba62aa45}{%
+           family={Pérès},
+           familyi={P\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=89ad1c6aa74355d573a6d32e70d637fb}{%
+           family={Kadry},
+           familyi={K\bibinitperiod},
+           given={Seifedine},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c37be12a73cd2064d2c73be5d2ae5458}{%
+           family={El\bibnamedelima Hami},
+           familyi={E\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Abdelkhalak},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{439dfde0474e70342ac32e29232e598e}
+      \strng{fullhash}{2d020a068a37f64eb8aebae67a7e70a6}
+      \strng{fullhashraw}{2d020a068a37f64eb8aebae67a7e70a6}
+      \strng{bibnamehash}{2d020a068a37f64eb8aebae67a7e70a6}
+      \strng{authorbibnamehash}{2d020a068a37f64eb8aebae67a7e70a6}
+      \strng{authornamehash}{439dfde0474e70342ac32e29232e598e}
+      \strng{authorfullhash}{2d020a068a37f64eb8aebae67a7e70a6}
+      \strng{authorfullhashraw}{2d020a068a37f64eb8aebae67a7e70a6}
+      \strng{editorbibnamehash}{6222eefb835435977bd79cab7f630e9a}
+      \strng{editornamehash}{6222eefb835435977bd79cab7f630e9a}
+      \strng{editorfullhash}{6222eefb835435977bd79cab7f630e9a}
+      \strng{editorfullhashraw}{6222eefb835435977bd79cab7f630e9a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Numerical {{Methods}} for {{Reliability}} and {{Safety Assessment}}}
+      \field{isbn}{978-3-319-07166-4 978-3-319-07167-1}
+      \field{langid}{english}
+      \field{title}{Reliability {{Assessment}} of a {{Multi-Redundant Repairable Mechatronic System}}}
+      \field{urlday}{11}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{407\bibrangedash 423}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/978-3-319-07167-1_14
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/10.1007/978-3-319-07167-1_14
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/10.1007/978-3-319-07167-1_14
+      \endverb
+    \endentry
+    \entry{nau_shop_1999}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=421078458c7133ed3265f02c8d2fd2f0}{%
+           family={Nau},
+           familyi={N\bibinitperiod},
+           given={Dana\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=5fde2ec473a5900f24f02ea9a11359ed}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Yue},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=81ceebb9ed1006dc3cb21c11482d5709}{%
+           family={Lotem},
+           familyi={L\bibinitperiod},
+           given={Amnon},
+           giveni={A\bibinitperiod}}}%
+        {{hash=29a0d5241080af60723675cc7994d967}{%
+           family={Muñoz-Avila},
+           familyi={M\bibinithyphendelim A\bibinitperiod},
+           given={Héctor},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{a797503d11544ce0f68676e2ee86840c}
+      \strng{fullhash}{30cb8d002888a5813f000a1a4c3a0a0c}
+      \strng{fullhashraw}{30cb8d002888a5813f000a1a4c3a0a0c}
+      \strng{bibnamehash}{30cb8d002888a5813f000a1a4c3a0a0c}
+      \strng{authorbibnamehash}{30cb8d002888a5813f000a1a4c3a0a0c}
+      \strng{authornamehash}{a797503d11544ce0f68676e2ee86840c}
+      \strng{authorfullhash}{30cb8d002888a5813f000a1a4c3a0a0c}
+      \strng{authorfullhashraw}{30cb8d002888a5813f000a1a4c3a0a0c}
+      \field{extraname}{1}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 16th {{International Joint Conference}} on {{Artificial Intelligence}}}
+      \field{title}{{{SHOP}}: {{Simple Hierarchical Ordered Planner}}}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{pages}{968\bibrangedash 973}
+      \range{pages}{6}
+      \verb{urlraw}
+      \verb https://www.ijcai.org/Proceedings/99-2/Papers/043.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ijcai.org/Proceedings/99-2/Papers/043.pdf
+      \endverb
+    \endentry
+    \entry{sherkat_two_2025}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=56da79cbc9b89d9d47730126c6f0efed}{%
+           family={Sherkat},
+           familyi={S\bibinitperiod},
+           given={Shermin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b3be2a6f083904d5ab57b8844f8b10fc}{%
+           family={Wortmann},
+           familyi={W\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d0867beb1da32a9bd2c3f3776f5101c7}{%
+           family={Wortmann},
+           familyi={W\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{2d6e5f53e8524a6f85bda8c2fe623e2e}
+      \strng{fullhash}{5f1a395e24e813649e3066b5a8854739}
+      \strng{fullhashraw}{5f1a395e24e813649e3066b5a8854739}
+      \strng{bibnamehash}{5f1a395e24e813649e3066b5a8854739}
+      \strng{authorbibnamehash}{5f1a395e24e813649e3066b5a8854739}
+      \strng{authornamehash}{2d6e5f53e8524a6f85bda8c2fe623e2e}
+      \strng{authorfullhash}{5f1a395e24e813649e3066b5a8854739}
+      \strng{authorfullhashraw}{5f1a395e24e813649e3066b5a8854739}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Task planning and scheduling are crucial for construction or fabrication (CF) processes. Automating them is necessary for more efficient plans in terms of time and resources. However, most construction planning processes are still performed manually despite the existence of various AI methods. Symbolic AI automated task planning (ATP) techniques offer a variety of features to tackle task planning problems, but their application to CF has not been researched yet. This study identifies the current state of research and gaps in the literature regarding these AI techniques while providing directions for future research. We conduct a systematic review that evaluates existing literature on ATP in terms of environmental characteristics, modeling languages, ATP techniques, and results. We searched the ACM, IEEE, Scopus, WOS, and SpringerLink databases for articles published in the last 20 years (2002–2022) that discuss symbolic AI methods used in task planning within the CF fields. Our findings indicate that research on automated planning is currently limited regarding the characteristics of CF environments. Only a few articles have utilized symbolic languages, AI planners, and ATP techniques. No article has evaluated their planning system in an on-site CF process. As a result, many symbolic languages, planners, and ATP techniques remain unexplored.}
+      \field{day}{30}
+      \field{issn}{0360-0300, 1557-7341}
+      \field{journaltitle}{ACM Computing Surveys}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{11}
+      \field{shortjournal}{ACM Comput. Surv.}
+      \field{shorttitle}{Two {{Decades}} of {{Automated AI Planning Methods}} in {{Construction}} and {{Fabrication}}}
+      \field{title}{Two {{Decades}} of {{Automated AI Planning Methods}} in {{Construction}} and {{Fabrication}}: A {{Systematic Review}}}
+      \field{urlday}{10}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{volume}{57}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 21}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1145/3729529
+      \endverb
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/10.1145/3729529
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/10.1145/3729529
+      \endverb
+    \endentry
+    \entry{nau_shop2_2003}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=fbe627ae7ffc94103868c07f7f17c6fc}{%
+           family={Nau},
+           familyi={N\bibinitperiod},
+           given={D.\bibnamedelimi S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=d8eedd0ab078c3be970ef507425d505c}{%
+           family={Au},
+           familyi={A\bibinitperiod},
+           given={T.\bibnamedelimi C.},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=e641cc8f73ff72accd5e87036b116c5d}{%
+           family={Ilghami},
+           familyi={I\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+        {{hash=af73b51fd7c1248bf0c3cab5a3765e83}{%
+           family={Kuter},
+           familyi={K\bibinitperiod},
+           given={U.},
+           giveni={U\bibinitperiod}}}%
+        {{hash=fe5a11087b4046236639b340c4da0b0f}{%
+           family={Murdock},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=b093c37857d6bc46f3f1e883b5cb437e}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e4a67935a850327ae40d7fb4eca3c6f7}{%
+           family={Yaman},
+           familyi={Y\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{147b6f21557159293ddcd27738b14a41}
+      \strng{fullhash}{28ea48cdc47cf0bc080b53d97e40a833}
+      \strng{fullhashraw}{28ea48cdc47cf0bc080b53d97e40a833}
+      \strng{bibnamehash}{147b6f21557159293ddcd27738b14a41}
+      \strng{authorbibnamehash}{147b6f21557159293ddcd27738b14a41}
+      \strng{authornamehash}{147b6f21557159293ddcd27738b14a41}
+      \strng{authorfullhash}{28ea48cdc47cf0bc080b53d97e40a833}
+      \strng{authorfullhashraw}{28ea48cdc47cf0bc080b53d97e40a833}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The SHOP2 planning system received one of the awards for distinguished performance in the 2002 International Planning Competition. This paper describes the features of SHOP2 which enabled it to excel in the competition, especially those aspects of SHOP2 that deal with temporal and metric planning domains.}
+      \field{day}{1}
+      \field{issn}{1076-9757}
+      \field{journaltitle}{Journal of Artificial Intelligence Research}
+      \field{month}{12}
+      \field{shortjournal}{jair}
+      \field{shorttitle}{{{SHOP2}}}
+      \field{title}{{{SHOP2}}: {{An HTN Planning System}}}
+      \field{urlday}{21}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{20}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{379\bibrangedash 404}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1613/jair.1141
+      \endverb
+      \verb{file}
+      \verb /Users/shrey/Zotero/storage/5R5LVA6B/Nau et al. - 2003 - SHOP2 An HTN Planning System.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://jair.org/index.php/jair/article/view/10362
+      \endverb
+      \verb{url}
+      \verb https://jair.org/index.php/jair/article/view/10362
+      \endverb
+    \endentry
+    \entry{nau_applications_2005}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=56c1f6eddf063c8dbf5a19de8c845303}{%
+           family={Nau},
+           familyi={N\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=bb21ffba9ee9c872fcf191ed322b5e53}{%
+           family={{Tsz-Chiu Au}},
+           familyi={T\bibinitperiod}}}%
+        {{hash=e641cc8f73ff72accd5e87036b116c5d}{%
+           family={Ilghami},
+           familyi={I\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+        {{hash=af73b51fd7c1248bf0c3cab5a3765e83}{%
+           family={Kuter},
+           familyi={K\bibinitperiod},
+           given={U.},
+           giveni={U\bibinitperiod}}}%
+        {{hash=10f86328227caa3ef2812cd33c762375}{%
+           family={Munoz-Avila},
+           familyi={M\bibinithyphendelim A\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=fe5a11087b4046236639b340c4da0b0f}{%
+           family={Murdock},
+           familyi={M\bibinitperiod},
+           given={J.W.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b093c37857d6bc46f3f1e883b5cb437e}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e4a67935a850327ae40d7fb4eca3c6f7}{%
+           family={Yaman},
+           familyi={Y\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{de42dea212dfc9ab639c83a401d23d9a}
+      \strng{fullhash}{da5689272f9239f31c7f27fa101715f0}
+      \strng{fullhashraw}{da5689272f9239f31c7f27fa101715f0}
+      \strng{bibnamehash}{de42dea212dfc9ab639c83a401d23d9a}
+      \strng{authorbibnamehash}{de42dea212dfc9ab639c83a401d23d9a}
+      \strng{authornamehash}{de42dea212dfc9ab639c83a401d23d9a}
+      \strng{authorfullhash}{da5689272f9239f31c7f27fa101715f0}
+      \strng{authorfullhashraw}{da5689272f9239f31c7f27fa101715f0}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1541-1672}
+      \field{journaltitle}{IEEE Intelligent Systems}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{2}
+      \field{shortjournal}{IEEE Intell. Syst.}
+      \field{title}{Applications of {{SHOP}} and {{SHOP2}}}
+      \field{urlday}{3}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{volume}{20}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{34\bibrangedash 41}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/MIS.2005.20
+      \endverb
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/document/1413169/
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/1413169/
+      \endverb
+    \endentry
+    \entry{lammich_framework_2015}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=057f38009461631459dbdadcc07ca1ab}{%
+           family={Lammich},
+           familyi={L\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0dec1f7af5e0f0d08f5c9f937f6594b0}{%
+           family={Neumann},
+           familyi={N\bibinitperiod},
+           given={René},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Mumbai India}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{e37f592c397cdaa081089b2d60ef4997}
+      \strng{fullhash}{e37f592c397cdaa081089b2d60ef4997}
+      \strng{fullhashraw}{e37f592c397cdaa081089b2d60ef4997}
+      \strng{bibnamehash}{e37f592c397cdaa081089b2d60ef4997}
+      \strng{authorbibnamehash}{e37f592c397cdaa081089b2d60ef4997}
+      \strng{authornamehash}{e37f592c397cdaa081089b2d60ef4997}
+      \strng{authorfullhash}{e37f592c397cdaa081089b2d60ef4997}
+      \strng{authorfullhashraw}{e37f592c397cdaa081089b2d60ef4997}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2015 {{Conference}} on {{Certified Programs}} and {{Proofs}}}
+      \field{day}{13}
+      \field{eventtitle}{{{POPL}} '15: {{The}} 42nd {{Annual ACM SIGPLAN-SIGACT Symposium}} on {{Principles}} of {{Programming Languages}}}
+      \field{isbn}{978-1-4503-3296-5}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{title}{A {{Framework}} for {{Verifying Depth-First Search Algorithms}}}
+      \field{urlday}{13}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{137\bibrangedash 146}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/2676724.2693165
+      \endverb
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/10.1145/2676724.2693165
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/10.1145/2676724.2693165
+      \endverb
+    \endentry
+    \entry{tarjan_depth-first_1971}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=554d334d2af10fcbf6d59d1194d9191b}{%
+           family={Tarjan},
+           familyi={T\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {East Lansing, MI, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{554d334d2af10fcbf6d59d1194d9191b}
+      \strng{fullhash}{554d334d2af10fcbf6d59d1194d9191b}
+      \strng{fullhashraw}{554d334d2af10fcbf6d59d1194d9191b}
+      \strng{bibnamehash}{554d334d2af10fcbf6d59d1194d9191b}
+      \strng{authorbibnamehash}{554d334d2af10fcbf6d59d1194d9191b}
+      \strng{authornamehash}{554d334d2af10fcbf6d59d1194d9191b}
+      \strng{authorfullhash}{554d334d2af10fcbf6d59d1194d9191b}
+      \strng{authorfullhashraw}{554d334d2af10fcbf6d59d1194d9191b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{12th {{Annual Symposium}} on {{Switching}} and {{Automata Theory}} (Swat 1971)}
+      \field{eventtitle}{12th {{Annual Symposium}} on {{Switching}} and {{Automata Theory}} (Swat 1971)}
+      \field{month}{10}
+      \field{title}{Depth-First Search and Linear Graph Algorithms}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{1971}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{114\bibrangedash 121}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/SWAT.1971.10
+      \endverb
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/document/4569669/
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/4569669/
+      \endverb
+    \endentry
+    \entry{koren_fault-tolerant_2021}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=74ad9196f94dfd019c5f0cad127d031a}{%
+           family={Koren},
+           familyi={K\bibinitperiod},
+           given={Israel},
+           giveni={I\bibinitperiod}}}%
+        {{hash=46c6992d3f1a929e1617577e14e158c5}{%
+           family={Krishna},
+           familyi={K\bibinitperiod},
+           given={C.\bibnamedelimi M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA}%
+      }
+      \list{publisher}{1}{%
+        {Morgan Kaufmann Publishers}%
+      }
+      \strng{namehash}{b594dc29e8c636a0d34bf6449607c238}
+      \strng{fullhash}{b594dc29e8c636a0d34bf6449607c238}
+      \strng{fullhashraw}{b594dc29e8c636a0d34bf6449607c238}
+      \strng{bibnamehash}{b594dc29e8c636a0d34bf6449607c238}
+      \strng{authorbibnamehash}{b594dc29e8c636a0d34bf6449607c238}
+      \strng{authornamehash}{b594dc29e8c636a0d34bf6449607c238}
+      \strng{authorfullhash}{b594dc29e8c636a0d34bf6449607c238}
+      \strng{authorfullhashraw}{b594dc29e8c636a0d34bf6449607c238}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Second edition}
+      \field{isbn}{978-0-12-818105-8}
+      \field{pagetotal}{402}
+      \field{title}{Fault-Tolerant Systems}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \keyw{Computer systems,Fault-tolerant computing,Reliability}
+    \endentry
+    \entry{smith_seismology_2018}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=040f97d9b5d37823ea737d33759b70d7}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={W.\bibnamedelimi Spencer},
+           giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=d8d8ac427678420c4f983c87b3ab7bd4}{%
+           family={Zeng},
+           familyi={Z\bibinitperiod},
+           given={Zheng},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=90e0ce01e5f496d374a631f92177ea75}{%
+           family={Carette},
+           familyi={C\bibinitperiod},
+           given={Jacques},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{6084ae73c2755f1f7196908c2015e9ca}
+      \strng{fullhash}{6ebeb5c0e3efbc06321efd0114b995d5}
+      \strng{fullhashraw}{6ebeb5c0e3efbc06321efd0114b995d5}
+      \strng{bibnamehash}{6ebeb5c0e3efbc06321efd0114b995d5}
+      \strng{authorbibnamehash}{6ebeb5c0e3efbc06321efd0114b995d5}
+      \strng{authornamehash}{6084ae73c2755f1f7196908c2015e9ca}
+      \strng{authorfullhash}{6ebeb5c0e3efbc06321efd0114b995d5}
+      \strng{authorfullhashraw}{6ebeb5c0e3efbc06321efd0114b995d5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1383-4649, 1573-157X}
+      \field{journaltitle}{Journal of Seismology}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{3}
+      \field{shortjournal}{J Seismol}
+      \field{shorttitle}{Seismology Software}
+      \field{title}{Seismology Software: State of the Practice}
+      \field{urlday}{11}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{volume}{22}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{755\bibrangedash 788}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1007/s10950-018-9731-3
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s10950-018-9731-3
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s10950-018-9731-3
+      \endverb
+    \endentry
+    \entry{steen_distributed_2025}{book}{}{}
+      \name{author}{2}{}{%
+        {{useprefix=false,hash=7ef720d0b57800861b86b5ce45425837}{%
+           family={Steen},
+           familyi={S\bibinitperiod},
+           given={Maarten},
+           giveni={M\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=2414455c999bc471f803cd14fdea939d}{%
+           family={Tanenbaum},
+           familyi={T\bibinitperiod},
+           given={Andrew\bibnamedelima S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Maarten van Steen}%
+      }
+      \strng{namehash}{b0f07de745346f2f323b551444bfd1ca}
+      \strng{fullhash}{b0f07de745346f2f323b551444bfd1ca}
+      \strng{fullhashraw}{b0f07de745346f2f323b551444bfd1ca}
+      \strng{bibnamehash}{b0f07de745346f2f323b551444bfd1ca}
+      \strng{authorbibnamehash}{b0f07de745346f2f323b551444bfd1ca}
+      \strng{authornamehash}{b0f07de745346f2f323b551444bfd1ca}
+      \strng{authorfullhash}{b0f07de745346f2f323b551444bfd1ca}
+      \strng{authorfullhashraw}{b0f07de745346f2f323b551444bfd1ca}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Fourth edition, version 4.03 (January 2025)}
+      \field{isbn}{978-90-815406-4-3 978-90-815406-3-6}
+      \field{langid}{english}
+      \field{pagetotal}{669}
+      \field{title}{Distributed Systems}
+      \field{year}{2025}
+      \field{dateera}{ce}
+    \endentry
+    \entry{tsimbalo_fix_2015}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=97fc2dcd5ba9c7abcca67f99e3eb517e}{%
+           family={Tsimbalo},
+           familyi={T\bibinitperiod},
+           given={Evgeny},
+           giveni={E\bibinitperiod}}}%
+        {{hash=50c4aaa5f3cd8c357415d98117f8ab08}{%
+           family={Fafoutis},
+           familyi={F\bibinitperiod},
+           given={Xenofon},
+           giveni={X\bibinitperiod}}}%
+        {{hash=06d67357ea59eba4ba8fecd5087e1e62}{%
+           family={Piechocki},
+           familyi={P\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Milan, Italy}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{9141dcf04992e36649e8ff61eea20be0}
+      \strng{fullhash}{1c191c120eb08c03417f00f5e0c83bde}
+      \strng{fullhashraw}{1c191c120eb08c03417f00f5e0c83bde}
+      \strng{bibnamehash}{1c191c120eb08c03417f00f5e0c83bde}
+      \strng{authorbibnamehash}{1c191c120eb08c03417f00f5e0c83bde}
+      \strng{authornamehash}{9141dcf04992e36649e8ff61eea20be0}
+      \strng{authorfullhash}{1c191c120eb08c03417f00f5e0c83bde}
+      \strng{authorfullhashraw}{1c191c120eb08c03417f00f5e0c83bde}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2015 {{IEEE}} 2nd {{World Forum}} on {{Internet}} of {{Things}} ({{WF-IoT}})}
+      \field{eventtitle}{2015 {{IEEE}} 2nd {{World Forum}} on {{Internet}} of {{Things}} ({{WF-IoT}})}
+      \field{isbn}{978-1-5090-0366-2}
+      \field{month}{12}
+      \field{title}{Fix It, Don't Bin It! - {{CRC}} Error Correction in {{Bluetooth Low Energy}}}
+      \field{urlday}{11}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{286\bibrangedash 290}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/WF-IoT.2015.7389067
+      \endverb
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/document/7389067/
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/7389067/
+      \endverb
+    \endentry
+    \entry{djambazova_redundancy_2023}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=6961d404a54de189bc97b208d587a62e}{%
+           family={Djambazova},
+           familyi={D\bibinitperiod},
+           given={Edita},
+           giveni={E\bibinitperiod}}}%
+        {{hash=f5f8f2003c991016ea1c34d6880d3e96}{%
+           family={Andreev},
+           familyi={A\bibinitperiod},
+           given={Rumen},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{a03d3eff93da04c04c65c309ac0c41a5}
+      \strng{fullhash}{a03d3eff93da04c04c65c309ac0c41a5}
+      \strng{fullhashraw}{a03d3eff93da04c04c65c309ac0c41a5}
+      \strng{bibnamehash}{a03d3eff93da04c04c65c309ac0c41a5}
+      \strng{authorbibnamehash}{a03d3eff93da04c04c65c309ac0c41a5}
+      \strng{authornamehash}{a03d3eff93da04c04c65c309ac0c41a5}
+      \strng{authorfullhash}{a03d3eff93da04c04c65c309ac0c41a5}
+      \strng{authorfullhashraw}{a03d3eff93da04c04c65c309ac0c41a5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{7}
+      \field{issn}{27387356, 27387364}
+      \field{journaltitle}{Problems of Engineering Cybernetics and Robotics}
+      \field{month}{7}
+      \field{shortjournal}{PECR}
+      \field{title}{Redundancy {{Management}} in {{Dependable Distributed Real-Time Systems}}}
+      \field{urlday}{21}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{79}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{37\bibrangedash 54}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.7546/PECR.79.23.02
+      \endverb
+      \verb{file}
+      \verb /Users/shrey/Zotero/storage/W5TPABCS/Djambazova and Andreev - 2023 - Redundancy Management in Dependable Distributed Real-Time Systems.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.iict.bas.bg/pecr/2023/79/2-PECR-Djambazova-Andreev.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.iict.bas.bg/pecr/2023/79/2-PECR-Djambazova-Andreev.pdf
+      \endverb
+    \endentry
+    \entry{tanenbaum_computer_2003}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=2414455c999bc471f803cd14fdea939d}{%
+           family={Tanenbaum},
+           familyi={T\bibinitperiod},
+           given={Andrew\bibnamedelima S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Upper Saddle River, NJ}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall PTR}%
+      }
+      \strng{namehash}{2414455c999bc471f803cd14fdea939d}
+      \strng{fullhash}{2414455c999bc471f803cd14fdea939d}
+      \strng{fullhashraw}{2414455c999bc471f803cd14fdea939d}
+      \strng{bibnamehash}{2414455c999bc471f803cd14fdea939d}
+      \strng{authorbibnamehash}{2414455c999bc471f803cd14fdea939d}
+      \strng{authornamehash}{2414455c999bc471f803cd14fdea939d}
+      \strng{authorfullhash}{2414455c999bc471f803cd14fdea939d}
+      \strng{authorfullhashraw}{2414455c999bc471f803cd14fdea939d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4th ed}
+      \field{isbn}{978-0-13-066102-9}
+      \field{pagetotal}{891}
+      \field{title}{Computer Networks}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \keyw{Computer networks}
+    \endentry
+    \entry{mukherjee_triple_2019}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=ee974de412c1f69d0db9e50a06b4bf03}{%
+           family={Mukherjee},
+           familyi={M\bibinitperiod},
+           given={Atin},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e49a21f7113bd6c17228cc4e744f3633}{%
+           family={Dhar},
+           familyi={D\bibinitperiod},
+           given={Anindya\bibnamedelima Sundar},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fb75206f1426de42bc86f9fa6a04996e}
+      \strng{fullhash}{fb75206f1426de42bc86f9fa6a04996e}
+      \strng{fullhashraw}{fb75206f1426de42bc86f9fa6a04996e}
+      \strng{bibnamehash}{fb75206f1426de42bc86f9fa6a04996e}
+      \strng{authorbibnamehash}{fb75206f1426de42bc86f9fa6a04996e}
+      \strng{authornamehash}{fb75206f1426de42bc86f9fa6a04996e}
+      \strng{authorfullhash}{fb75206f1426de42bc86f9fa6a04996e}
+      \strng{authorfullhashraw}{fb75206f1426de42bc86f9fa6a04996e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{18792391}
+      \field{journaltitle}{Microelectronics Journal}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{shortjournal}{Microelectronics Journal}
+      \field{title}{Triple Transistor Based Triple Modular Redundancy with Embedded Voter Circuit}
+      \field{urlday}{13}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{volume}{87}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{101\bibrangedash 109}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.mejo.2019.03.014
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0026269218305561
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0026269218305561
+      \endverb
+    \endentry
+    \entry{shin_time_1994}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=6de1f6de117e43d62732cc9d3438c542}{%
+           family={Shin},
+           familyi={S\bibinitperiod},
+           given={K.G.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=45813c8767d5c3f2d113d6ae8e784ac9}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Hagbae},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{96a507d39da9927066afc1d5adf414c2}
+      \strng{fullhash}{96a507d39da9927066afc1d5adf414c2}
+      \strng{fullhashraw}{96a507d39da9927066afc1d5adf414c2}
+      \strng{bibnamehash}{96a507d39da9927066afc1d5adf414c2}
+      \strng{authorbibnamehash}{96a507d39da9927066afc1d5adf414c2}
+      \strng{authornamehash}{96a507d39da9927066afc1d5adf414c2}
+      \strng{authorfullhash}{96a507d39da9927066afc1d5adf414c2}
+      \strng{authorfullhashraw}{96a507d39da9927066afc1d5adf414c2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00189340}
+      \field{journaltitle}{IEEE Transactions on Computers}
+      \field{month}{10}
+      \field{number}{10}
+      \field{shortjournal}{IEEE Trans. Comput.}
+      \field{title}{A Time Redundancy Approach to {{TMR}} Failures Using Fault-State Likelihoods}
+      \field{urlday}{13}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{volume}{43}
+      \field{year}{1994}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1151\bibrangedash 1162}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/12.324541
+      \endverb
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/document/324541/
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/324541/
+      \endverb
+    \endentry
+    \entry{lamport_time_1978}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=5d77435450d10a850a5b58577b9a456b}{%
+           family={Lamport},
+           familyi={L\bibinitperiod},
+           given={Leslie},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{fullhash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{fullhashraw}{5d77435450d10a850a5b58577b9a456b}
+      \strng{bibnamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authorbibnamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authornamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authorfullhash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authorfullhashraw}{5d77435450d10a850a5b58577b9a456b}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The concept of one event happening before another in a distributed system is examined, and is shown to define a partial ordering of the events. A distributed algorithm is given for synchronizing a system of logical clocks which can be used to totally order the events. The use of the total ordering is illustrated with a method for solving synchronization problems. The algorithm is then specialized for synchronizing physical clocks, and a bound is derived on how far out of synchrony the clocks can become.}
+      \field{issn}{0001-0782, 1557-7317}
+      \field{journaltitle}{Communications of the ACM}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{7}
+      \field{shortjournal}{Commun. ACM}
+      \field{title}{Time, Clocks, and the Ordering of Events in a Distributed System}
+      \field{urlday}{21}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{21}
+      \field{year}{1978}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{558\bibrangedash 565}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/359545.359563
+      \endverb
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/10.1145/359545.359563
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/10.1145/359545.359563
+      \endverb
+    \endentry
+    \entry{milstd1553c}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=c276e5e25dabfcb5829609b82a1e01ca}{%
+           family={{U.S. Department of Defense}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {U.S. Department of Defense}%
+      }
+      \strng{namehash}{c276e5e25dabfcb5829609b82a1e01ca}
+      \strng{fullhash}{c276e5e25dabfcb5829609b82a1e01ca}
+      \strng{fullhashraw}{c276e5e25dabfcb5829609b82a1e01ca}
+      \strng{bibnamehash}{c276e5e25dabfcb5829609b82a1e01ca}
+      \strng{authorbibnamehash}{c276e5e25dabfcb5829609b82a1e01ca}
+      \strng{authornamehash}{c276e5e25dabfcb5829609b82a1e01ca}
+      \strng{authorfullhash}{c276e5e25dabfcb5829609b82a1e01ca}
+      \strng{authorfullhashraw}{c276e5e25dabfcb5829609b82a1e01ca}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{MIL-STD-1553C}
+      \field{title}{Digital {{Time Division Command}}/{{Response Multiplex Data Bus}}}
+      \field{urlday}{27}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://testsystems.com/pdf/MIL-STD-1553C.pdf
+      \endverb
+      \verb{url}
+      \verb https://testsystems.com/pdf/MIL-STD-1553C.pdf
+      \endverb
+    \endentry
+    \entry{bonna_triple_2019}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=3550a84c2ba7e56366135bdd788b7d43}{%
+           family={Bonna},
+           familyi={B\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6291057537cc2ec458f855ce31d0f826}{%
+           family={Loubach},
+           familyi={L\bibinitperiod},
+           given={Denis\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=7cb36f86560ff0985a7d517dc43cbfb0}{%
+           family={Sander},
+           familyi={S\bibinitperiod},
+           given={Ingo},
+           giveni={I\bibinitperiod}}}%
+        {{hash=bc96729a548c0c5c738c611f9747f1be}{%
+           family={Söderquist},
+           familyi={S\bibinitperiod},
+           given={Ingemar},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{57f79a5d3ce1f339d5dcac83f18dd9ce}
+      \strng{fullhash}{0393ef24a764c17079936c618d1044af}
+      \strng{fullhashraw}{0393ef24a764c17079936c618d1044af}
+      \strng{bibnamehash}{0393ef24a764c17079936c618d1044af}
+      \strng{authorbibnamehash}{0393ef24a764c17079936c618d1044af}
+      \strng{authornamehash}{57f79a5d3ce1f339d5dcac83f18dd9ce}
+      \strng{authorfullhash}{0393ef24a764c17079936c618d1044af}
+      \strng{authorfullhashraw}{0393ef24a764c17079936c618d1044af}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{23}
+      \field{eventtitle}{The 10th {{Aerospace Technology Congress}}, {{October}} 8-9, 2019, {{Stockholm}}, {{Sweden}}}
+      \field{month}{10}
+      \field{title}{Triple {{Modular Redundancy}} Based on {{Runtime Reconfiguration}} and {{Formal Models}} of {{Computation}}}
+      \field{urlday}{21}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{145\bibrangedash 151}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.3384/ecp19162016
+      \endverb
+      \verb{urlraw}
+      \verb https://ep.liu.se/en/conference-article.aspx?series=ecp&issue=162&Article_No=16
+      \endverb
+      \verb{url}
+      \verb https://ep.liu.se/en/conference-article.aspx?series=ecp&issue=162&Article_No=16
+      \endverb
+    \endentry
+    \entry{anwer_dynamic_2020}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=91017fb9fa0c1c94cf61765f098d1e87}{%
+           family={Anwer},
+           familyi={A\bibinitperiod},
+           given={Jahanzeb},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8ad8b9fbbf7b690d511a9b828a97eef0}{%
+           family={Meisner},
+           familyi={M\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=20e49b789b16803d6996d1d1d50fce20}{%
+           family={Platzner},
+           familyi={P\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{74ec18b6d2db0cb6753279975219195e}
+      \strng{fullhash}{1bb5217c6cb8dab0f920bac80c307827}
+      \strng{fullhashraw}{1bb5217c6cb8dab0f920bac80c307827}
+      \strng{bibnamehash}{1bb5217c6cb8dab0f920bac80c307827}
+      \strng{authorbibnamehash}{1bb5217c6cb8dab0f920bac80c307827}
+      \strng{authornamehash}{74ec18b6d2db0cb6753279975219195e}
+      \strng{authorfullhash}{1bb5217c6cb8dab0f920bac80c307827}
+      \strng{authorfullhashraw}{1bb5217c6cb8dab0f920bac80c307827}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Radiation tolerance in FPGAs is an important field of research particularly for reliable computation in electronics used in aerospace and satellite missions. The motivation behind this research is the degradation of reliability in FPGA hardware due to single-event effects caused by radiation particles. Redundancy is a commonly used technique to enhance the fault-tolerance capability of radiation-sensitive applications. However, redundancy comes with an overhead in terms of excessive area consumption, latency, and power dissipation. Moreover, the redundant circuit implementations vary in structure and resource usage with the redundancy insertion algorithms as well as number of used redundant stages. The radiation environment varies during the operation time span of the mission depending on the orbit and space weather conditions. Therefore, the overheads due to redundancy should also be optimized at run-time with respect to the current radiation level. In this paper, we propose a technique called Dynamic Reliability Management (DRM) that utilizes the radiation data, interprets it, selects a suitable redundancy level, and performs the run-time reconfiguration, thus varying the reliability levels of the target computation modules. DRM is composed of two parts. The design-time tool flow of DRM generates a library of various redundant implementations of the circuit with different magnitudes of performance factors. The run-time tool flow, while utilizing the radiation/error-rate data, selects a required redundancy level and reconfigures the computation module with the corresponding redundant implementation. Both parts of DRM have been verified by experimentation on various benchmarks. The most significant finding we have from this experimentation is that the performance can be scaled multiple times by using partial reconfiguration feature of DRM, e.g., 7.7 and 3.7 times better performance results obtained for our data sorter and matrix multiplier case studies compared with static reliability management techniques. Therefore, DRM allows for maintaining a suitable trade-off between computation reliability and performance overhead during run-time of an application.}
+      \field{day}{13}
+      \field{issn}{1687-7195, 1687-7209}
+      \field{journaltitle}{International Journal of Reconfigurable Computing}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{shortjournal}{International Journal of Reconfigurable Computing}
+      \field{title}{Dynamic {{Reliability Management}} for {{FPGA-Based Systems}}}
+      \field{urlday}{21}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{2020}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 19}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1155/2020/2808710
+      \endverb
+      \verb{urlraw}
+      \verb https://www.hindawi.com/journals/ijrc/2020/2808710/
+      \endverb
+      \verb{url}
+      \verb https://www.hindawi.com/journals/ijrc/2020/2808710/
+      \endverb
+    \endentry
+    \entry{hamilton_adaptive-hybrid_2019}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=5a893b45ca1de32337cd4605185ed69e}{%
+           family={Hamilton},
+           familyi={H\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=4f47057266eeee8b901b9d3efdd763fb}{%
+           family={Graham},
+           familyi={G\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=264fcf599acdadad8059f63f47d6289e}{%
+           family={Carbino},
+           familyi={C\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod}}}%
+        {{hash=1c19d1ca2db942c760b322ad898ae472}{%
+           family={Petrosky},
+           familyi={P\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c99e7c434f14577c55f27c8ddefd93cd}{%
+           family={Betances},
+           familyi={B\bibinitperiod},
+           given={Addison},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{cbee8a337369f3ea1c323cea0d422e3b}
+      \strng{fullhash}{13bb5444b67168bd89958b730eb2dd84}
+      \strng{fullhashraw}{13bb5444b67168bd89958b730eb2dd84}
+      \strng{bibnamehash}{13bb5444b67168bd89958b730eb2dd84}
+      \strng{authorbibnamehash}{13bb5444b67168bd89958b730eb2dd84}
+      \strng{authornamehash}{cbee8a337369f3ea1c323cea0d422e3b}
+      \strng{authorfullhash}{13bb5444b67168bd89958b730eb2dd84}
+      \strng{authorfullhashraw}{13bb5444b67168bd89958b730eb2dd84}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Adaptive-Hybrid Redundancy (AHR) shows promise as a method to allow flexibility when selecting between processing speed and energy efficiency while maintaining a level of error mitigation in space radiation environments. Whereas previous work demonstrated AHR’s feasibility in an error free environment, this work analyzes AHR performance in the presence of errors. Errors are deliberately injected into AHR at specific times in the processing chain to demonstrate best and worst case performance impacts. This analysis demonstrates that AHR provides flexibility in processing speed and energy efficiency in the presence of errors.}
+      \field{day}{1}
+      \field{issn}{2079-9292}
+      \field{journaltitle}{Electronics}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{11}
+      \field{shortjournal}{Electronics}
+      \field{title}{Adaptive-{{Hybrid Redundancy}} with {{Error Injection}}}
+      \field{urlday}{21}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{8}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1266}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/electronics8111266
+      \endverb
+      \verb{file}
+      \verb /Users/shrey/Zotero/storage/BJ6VN53X/Hamilton et al. - 2019 - Adaptive-Hybrid Redundancy with Error Injection.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2079-9292/8/11/1266
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2079-9292/8/11/1266
+      \endverb
+    \endentry
+    \entry{kossiakoff_systems_2020}{book}{}{}
+      \name{author}{4}{}{%
+        {{hash=66c1ef390cab009e1a10aa94b542fc6c}{%
+           family={Kossiakoff},
+           familyi={K\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6b29b9a8f6eb3aa6275552dbba916aaa}{%
+           family={Seymour},
+           familyi={S\bibinitperiod},
+           given={Samuel\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=8a8fddea79b046f1fc987b1f559d35d4}{%
+           family={Flanigan},
+           familyi={F\bibinitperiod},
+           given={David\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=325effd12653def1d7de3136ae4353e1}{%
+           family={Biemer},
+           familyi={B\bibinitperiod},
+           given={Steven\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Hoboken, NJ}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons, Inc}%
+      }
+      \strng{namehash}{a6cc20ffc9138ea286999bb8abc69529}
+      \strng{fullhash}{3d36213e35bc3021ad9f82221dd54791}
+      \strng{fullhashraw}{3d36213e35bc3021ad9f82221dd54791}
+      \strng{bibnamehash}{3d36213e35bc3021ad9f82221dd54791}
+      \strng{authorbibnamehash}{3d36213e35bc3021ad9f82221dd54791}
+      \strng{authornamehash}{a6cc20ffc9138ea286999bb8abc69529}
+      \strng{authorfullhash}{3d36213e35bc3021ad9f82221dd54791}
+      \strng{authorfullhashraw}{3d36213e35bc3021ad9f82221dd54791}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{"Systems Engineering Principles and Practice continues to be a national standard textbook for the study of traditional systems engineering for advanced undergraduate and graduate students. It addresses the need for an introductory overview, first-text for the development and acquisition of complex technical systems. The material is organized in a way that teaches the reader how to think like a systems engineer and carry out best practices in the field. Since systems engineering is still developing as a discipline, there have been new concepts and practices that have entered the field since the text was originally published in 2003, and the second edition in 2011. An increasing number of students with diverse backgrounds and professions have used the text, leading to the need for new topics, expansion, integration and clarification. The proposed third edition is developed by two authors of the second edition and a new author, to upgrade this unique interdisciplinary guide to communicate the principles of good practice and alternative approaches to accomplish systems engineering goals"--}
+      \field{edition}{Third edition}
+      \field{isbn}{978-1-119-51669-9 978-1-119-51670-5 978-1-119-51667-5 978-1-119-51666-8}
+      \field{langid}{english}
+      \field{pagetotal}{1}
+      \field{series}{Wiley Series in Systems Engineering and Management}
+      \field{shorttitle}{Systems Engineering}
+      \field{title}{Systems Engineering: Principles and Practice}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb /Users/shrey/Zotero/storage/VQURBCAK/Kossiakoff et al. - 2020 - Systems engineering principles and practice.pdf
+      \endverb
+    \endentry
+    \entry{viotti_consistency_2017}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=aa7fe32cc6db1745a14ad74da154a585}{%
+           family={Viotti},
+           familyi={V\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=315162164fd9e68fe8c921224a6af08d}{%
+           family={Vukolić},
+           familyi={V\bibinitperiod},
+           given={Marko},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{28524c45bdfc050296049c1ee2d43c28}
+      \strng{fullhash}{28524c45bdfc050296049c1ee2d43c28}
+      \strng{fullhashraw}{28524c45bdfc050296049c1ee2d43c28}
+      \strng{bibnamehash}{28524c45bdfc050296049c1ee2d43c28}
+      \strng{authorbibnamehash}{28524c45bdfc050296049c1ee2d43c28}
+      \strng{authornamehash}{28524c45bdfc050296049c1ee2d43c28}
+      \strng{authorfullhash}{28524c45bdfc050296049c1ee2d43c28}
+      \strng{authorfullhashraw}{28524c45bdfc050296049c1ee2d43c28}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Over the years, different meanings have been associated with the word consistency in the distributed systems community. While in the ’80s “consistency” typically meant strong consistency , later defined also as linearizability , in recent years, with the advent of highly available and scalable systems, the notion of “consistency” has been at the same time both weakened and blurred. In this article, we aim to fill the void in the literature by providing a structured and comprehensive overview of different consistency notions that appeared in distributed systems, and in particular storage systems research, in the last four decades. We overview more than 50 different consistency notions, ranging from linearizability to eventual and weak consistency, defining precisely many of these, in particular where the previous definitions were ambiguous. We further provide a partial order among different consistency predicates, ordering them by their semantic “strength,” which we believe will be useful in future research. Finally, we map the consistency semantics to different practical systems and research prototypes. The scope of this article is restricted to non-transactional semantics, that is, those that apply to single storage object operations. As such, our article complements the existing surveys done in the context of transactional, database consistency semantics.}
+      \field{day}{31}
+      \field{issn}{0360-0300, 1557-7341}
+      \field{journaltitle}{ACM Computing Surveys}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{1}
+      \field{shortjournal}{ACM Comput. Surv.}
+      \field{title}{Consistency in {{Non-Transactional Distributed Storage Systems}}}
+      \field{urlday}{19}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{volume}{49}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 34}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1145/2926965
+      \endverb
+      \verb{file}
+      \verb /Users/shrey/Zotero/storage/IJM75PP9/Viotti and Vukolić - 2017 - Consistency in Non-Transactional Distributed Storage Systems.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/10.1145/2926965
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/10.1145/2926965
+      \endverb
+    \endentry
+    \entry{mitra_common-mode_2000}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=6f04d9a5e2374bd9de28c9ad82ecccab}{%
+           family={Mitra},
+           familyi={M\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4cab011a649f311f64c7690dbcfdfb4a}{%
+           family={Saxena},
+           familyi={S\bibinitperiod},
+           given={N.R.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=93dd1ccf5109648d41a6423ea6c1ebda}{%
+           family={McCluskey},
+           familyi={M\bibinitperiod},
+           given={E.J.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc11c85b62e48f5b41f540c91df0c2d4}
+      \strng{fullhash}{f8ccb109a0406750bb834bd79cae7671}
+      \strng{fullhashraw}{f8ccb109a0406750bb834bd79cae7671}
+      \strng{bibnamehash}{f8ccb109a0406750bb834bd79cae7671}
+      \strng{authorbibnamehash}{f8ccb109a0406750bb834bd79cae7671}
+      \strng{authornamehash}{dc11c85b62e48f5b41f540c91df0c2d4}
+      \strng{authorfullhash}{f8ccb109a0406750bb834bd79cae7671}
+      \strng{authorfullhashraw}{f8ccb109a0406750bb834bd79cae7671}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{00189529}
+      \field{journaltitle}{IEEE Transactions on Reliability}
+      \field{month}{9}
+      \field{number}{3}
+      \field{shortjournal}{IEEE Trans. Rel.}
+      \field{shorttitle}{Common-Mode Failures in Redundant {{VLSI}} Systems}
+      \field{title}{Common-Mode Failures in Redundant {{VLSI}} Systems: A Survey}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{49}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{285\bibrangedash 295}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/24.914545
+      \endverb
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/document/914545/
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/914545/
+      \endverb
+    \endentry
+    \entry{parhami_voting_1994}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=05b9377a96c4d050f2489c8a99922f16}{%
+           family={Parhami},
+           familyi={P\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{05b9377a96c4d050f2489c8a99922f16}
+      \strng{fullhash}{05b9377a96c4d050f2489c8a99922f16}
+      \strng{fullhashraw}{05b9377a96c4d050f2489c8a99922f16}
+      \strng{bibnamehash}{05b9377a96c4d050f2489c8a99922f16}
+      \strng{authorbibnamehash}{05b9377a96c4d050f2489c8a99922f16}
+      \strng{authornamehash}{05b9377a96c4d050f2489c8a99922f16}
+      \strng{authorfullhash}{05b9377a96c4d050f2489c8a99922f16}
+      \strng{authorfullhashraw}{05b9377a96c4d050f2489c8a99922f16}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00189529}
+      \field{journaltitle}{IEEE Transactions on Reliability}
+      \field{month}{12}
+      \field{number}{4}
+      \field{shortjournal}{IEEE Trans. Rel.}
+      \field{title}{Voting Algorithms}
+      \field{urlday}{21}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{43}
+      \field{year}{1994}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{617\bibrangedash 629}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/24.370218
+      \endverb
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/document/370218/
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/370218/
+      \endverb
+    \endentry
+  \enddatalist
+  \missing{hodson_failure-tolerant_2024}
+  \missing{schneider_1990}
+\endrefsection
+\endinput
+
