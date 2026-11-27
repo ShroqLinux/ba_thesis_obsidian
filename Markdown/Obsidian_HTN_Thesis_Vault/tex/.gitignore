@@ -1,0 +1,97 @@
+# ---------- LaTeX build artifacts (LuaLaTeX + latexmk + biber) ----------
+
+# Core auxiliary files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+# Compiled output (remove this line if you want to commit the PDF)
+*.pdf
+# ...but keep PDFs used as figures
+!images/**/*.pdf
+
+# latexmk
+*.fdb_latexmk
+*.synctex
+*.synctex.gz
+*.synctex(busy)
+*.synctex.gz(busy)
+*.pdfsync
+
+# biblatex / biber
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+*-blx.aux
+*-blx.bib
+
+# LuaLaTeX / LuaTeX caches
+*.luac
+luatex-cache/
+
+# hyperref / bookmarks
+*.brf
+*.nav
+*.snm
+*.vrb
+
+# TikZ / forest externalisation
+*.auxlock
+*.dpth
+*.md5
+*.figlist
+*.makefile
+*-figure*.pdf
+*.for
+
+# Glossaries / indexes / acronyms
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.ist
+*.idx
+*.ilg
+*.ind
+*.nlo
+*.nls
+
+# minted / listings / algorithm lists
+_minted*/
+*.pyg
+*.lol
+*.loa
+
+# Misc packages
+*.xdv
+*.xdy
+*.tdo
+*.thm
+*.ptc
+*.mtc*
+*.maf
+
+# Build output directories (if you use -outdir / -auxdir)
+build/
+out/
+_build/
+
+# Editor / OS junk
+*~
+*.bak
+*.sav
+*.swp
+.DS_Store
