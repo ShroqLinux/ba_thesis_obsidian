@@ -3,7 +3,7 @@
 
 
 \section{Technical Problem Definition}
-\input{chapters/ipo_model}
+\input{figures/ipo_model}
 
 Using the model above, it is simpler to show what role TMR has as the process which mitigates a possible SPOF in a system view. Input would come from other systems, e.g. sensors, sub-systems, etc., and needs to be received by the process. The process then passes forward its output to other sub-systems, e.g. actuators.
 
@@ -29,7 +29,7 @@ As a method of work, some principles from systems engineering will be used to se
 
 Because the scope is focused on concept development and prototyping, the left side of the V-model will be used here as a guide to first define the system level goal, the system's design and functions which must be assigned to the components to be implemented. At the end, a simple proof of concept will be used to demonstrate an implementation that can be used as an example.
 
-\input{chapters/vmodel}
+\input{figures/vmodel}
 
 % Describe the proposed architecture and design decisions.
 
@@ -39,7 +39,7 @@ As an initial approach, it is useful to consider what is generally required for 
 
 Active is the expected system behavior during normal operation where input data is received, passed to HTN worker nodes, a result is determined and forwarded as output. The third system state is Standby which would be during system recovery where all other components must wait until normal operation may resume, upon which the system transitions again to Active state.
 
-\input{chapters/node_states}
+\input{figures/node_states}
 
 \section{Functional Logic}
 
@@ -48,13 +48,13 @@ For functional logic, the basis for TMR is to use a voter to mask faults. One pr
 In Active state, synchronization is needed at different points during normal operation.
 Input data may be received from different sources at varying times and potential delays are also involved. Therefore a synchronization point \(sync1\) is defined at the start of the process. The worker nodes themselves may have different execution times until completion of their task. This is the second synchronization point \(sync2\). Then before the output data can be sent forward, a third synchronization point \(sync3\) is required from TMR voter resolution to the decision of how the voter result is to be used.
 
-\input{chapters/voting_cycle}
+\input{figures/voting_cycle}
 
 The reason for a rejection of the voted result is one common flaw with voter resolution. If a majority of the worker nodes' results is equally incorrect, the voter would resolve it as a valid result. This is a common mode failure (CMF) and is defined by \textcite{hodson_failure-tolerant_2024} as a failure that occurs due to a single event, design defect or violation of other independence assumptions. \textcite{mitra_common-mode_2000} describe several techniques to handle common mode failure, one aspect is to include methods that avoid CMF in the design and development process. It is important to mention here that any technique can only mitigate or reduce the effects of a CMF significantly, but cannot remove one entirely.
 
 Following the principle of mitigating CMF in the design process, one choice will be proposed here by introduction of a rule set. A basic rule set can be defined following the logic of how SHOP works. Because tasks are ordered into their sequence of execution, a check can be defined per pair of any subsequent tasks A and B. If B is allowed to follow after A, then a 'pass' is determined. In the case of a task A before B, where B must not follow after A, a 'fail' is determined.
 
-\input{chapters/rule_check}
+\input{figures/rule_check}
 
 Repeating the same input would not yield a different result however, which is also this method's limitation because of DFS' deterministic behavior. The wrong majority still persists with this design choice and cannot be caught with this rule set. Due to definition of the scope focused on node failure and system synchronization, the handling of an incorrect plan will be kept simple as discarding of the result.
 
@@ -64,7 +64,7 @@ To transition back to Active state, the system must be resynchronized to a commo
 
 As a starting point, the following architecture concept in figure~\ref{fig:architecture} will be used as a reference.
 
-\input{chapters/architecture}
+\input{figures/architecture}
 
 Necessary components at control plane level for a hierarchical task network include a dispatcher for the initial state and goal, state monitoring (e.g. monitor or observer) of worker nodes and a voter per redundant component.
 

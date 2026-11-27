@@ -18,7 +18,7 @@ Tasks: fly to the area, find the radar, suppress it, check the result, return.
 
 Here’s a simple hierarchical task network (HTN) for the scenario. Compound tasks are broken down into subtasks, alternative methods are shown where the drone can achieve a task in different ways.
 
-\input{chapters/htn_figure}
+\input{figures/htn_figure}
 
 One case will be defined here to demonstrate how the HTN calculates a task plan.
 
@@ -30,11 +30,11 @@ How it works: the planner always takes the first task on its list.
 \item Primitive task: it checks the precondition, applies the effects to the state and adds the task to the plan.
 \end{itemize}
 
-\input{chapters/htn_operators}
+\input{figures/htn_operators}
 
 The next table shows how the HTN breaks down the compound task into a task plan. At the end, only primitive tasks are in the plan to be run.
 
-\input{chapters/htn_trace}
+\input{figures/htn_trace}
 
 
 \section{Redundancy Engineering}
@@ -56,4 +56,4 @@ This means individual faults of a node are masked by the voter and a system sees
 
 An example for structural redundancy is a system using Triple Modular Redundancy (TMR) that can transition to Dual Modular Redundancy (DMR). Upon failure of one redundant node, the system can gracefully degrade to use two of the original three nodes in a cluster \parencite{djambazova_redundancy_2023}.
 
-\input{chapters/tmr_failure}
+\input{figures/tmr_failure}
