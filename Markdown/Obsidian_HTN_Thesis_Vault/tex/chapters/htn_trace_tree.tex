@@ -1,0 +1,49 @@
+% SEAD HTN decomposition (illustrates Table tab:htn-trace)
+% include with \input{chapters/htn_trace_tree}
+% Uses the compound/primitive/method styles and \htnpre from main.tex
+\begin{figure}[htbp]
+  \centering
+  \tikzset{
+    stepno/.style   ={circle, fill=green!45!black, text=white, font=\scriptsize\bfseries,
+                    inner sep=0pt, minimum size=12pt},
+    notused/.style={draw=black!30, text=black!40, fill=black!3},
+  }
+  \begin{forest}
+    for tree={
+      font=\footnotesize, align=center, inner sep=3pt, rounded corners=2pt,
+      minimum height=0.7cm,
+      l sep=0.8cm, s sep=0.6cm,
+      edge={draw=green!45!black, very thick},
+      parent anchor=south, child anchor=north,
+    }
+    [{\textbf{suppress-enemy-radar}}, compound, label={[stepno]right:1}
+      [{m0: standard SEAD\htnpre{drone ready}}, method
+        [{fly-to-\\area}, primitive, label={[stepno]below:2}]
+        [{find-radar}, compound, label={[stepno]right:3}
+          [{m1: passive\\search\htnpre{radar emitting}}, method, notused,
+            edge={draw=black!30, thick, dashed}
+            [{listen-\\passively}, primitive, notused,
+              edge={draw=black!30, thick, dashed}]
+          ]
+          [{m2: decoy\\search\htnpre{radar silent}}, method
+            [{act-as-\\decoy}, primitive, label={[stepno]below:4}]
+            [{listen-\\passively}, primitive, label={[stepno]below:5}]
+          ]
+        ]
+        [{suppress-\\radar}, primitive, label={[stepno]below:6}]
+        [{check-\\result}, primitive, label={[stepno]below:7}]
+        [{return-to-\\base}, primitive, label={[stepno]below:8}]
+      ]
+    ]
+  \end{forest}
+
+  \medskip
+  {\small $s_0 = \{\htnfact{drone-ready},\ \htnfact{at-base},\ \htnfact{radar-silent}\}$}
+
+  \caption[Decomposition of the SEAD HTN]{%
+    Decomposition of the SEAD HTN for the initial state $s_0$.
+    Highlighted edges show the chosen decomposition; method \textit{m1}
+    is not applicable because the radar is silent. Numbers refer to the
+    steps in Table~\ref{tab:htn-trace}.}
+  \label{fig:htn-trace-tree}
+\end{figure}

@@ -1,0 +1,62 @@
+% TMR voting cycle (UML activity diagram) -- include with \input{chapters/voting_cycle}
+% Needs only TikZ + the positioning library (already loaded via forest in main.tex)
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[
+      >=latex,
+      font=\small,
+      action/.style ={draw, thick, rounded corners=6pt, fill=blue!6, align=center,
+                      minimum width=2.4cm, minimum height=1.1cm},
+      init/.style   ={circle, fill=black, inner sep=0pt, minimum size=9pt},
+      final/.style  ={circle, draw, thick, inner sep=0pt, minimum size=13pt,
+                      path picture={\fill (path picture bounding box.center) circle (3.5pt);}},
+      decision/.style={diamond, draw, thick, aspect=1, inner sep=0pt, minimum size=0.9cm},
+      bar/.style    ={fill=black, minimum width=4pt, minimum height=2.2cm, inner sep=0pt},
+      flow/.style   ={->, thick},
+      sync/.style   ={dashed, black!55},
+      synclbl/.style={font=\small, text=black!70},
+    ]
+    % Nodes
+    \node[init]     (ini) at (0,0)     {};
+    \node[bar]      (bar) at (2.3,0)   {};
+    \node[action]   (wrk) at (5.1,0)   {Worker nodes\\process};
+    \node[action]   (vot) at (9.0,0)   {Voter resolution};
+    \node[decision] (dec) at (12.5,0)  {};
+    \node[final]    (fin) at (14.3,0)  {};
+    \node[action, fill=red!8] (oth) at (12.5,-2.8) {Discard result};
+    \node[final]    (fin2) at (14.3,-2.8) {};
+
+    \node[font=\small, align=center, above=3pt of dec] {Use vote\\result};
+
+    % Input data distributed to the worker nodes
+    \coordinate (split) at (1.0,0);
+    \draw[thick] (ini) -- (split);
+    \draw[flow] (split) |- ([yshift= 0.7cm]bar.west);
+    \draw[flow] (split) --  (bar.west);
+    \draw[flow] (split) |- ([yshift=-0.7cm]bar.west);
+    \node[font=\small, below=0.85cm of split, anchor=north] {input data};
+
+    % Main flow
+    \draw[flow] (bar) -- (wrk);
+    \draw[flow] (wrk) -- (vot);
+    \draw[flow] (vot) -- (dec);
+    \draw[flow] (dec) -- node[above] {yes} (fin);
+    \draw[flow] (dec) -- node[right] {no} (oth);
+    \draw[flow] (oth) -- (fin2);
+
+    % Synchronisation points
+    \foreach \x/\name in {3.15/sync1, 7.05/sync2, 11.0/sync3} {
+      \draw[sync] (\x, 1.5) -- (\x,-1.5);
+      \node[synclbl, below] at (\x,-1.5) {\name};
+    }
+  \end{tikzpicture}
+
+  \caption[Activity diagram of one TMR voting cycle]{%
+    Activity diagram of one TMR voting cycle. The input data is
+    distributed to all worker nodes, which process it in parallel; their
+    results are passed to the voter. If the vote result can be used, the
+    cycle ends with that result; otherwise the result is discarded. The dashed
+    lines \emph{sync1}--\emph{sync3} mark the synchronization points
+    between the stages.}
+  \label{fig:voting-cycle}
+\end{figure}

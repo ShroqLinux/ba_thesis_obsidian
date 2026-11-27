@@ -1,0 +1,41 @@
+% Generic HTN tree (top-down) -- include with \input{chapters/generic_htn}
+% Uses the compound/primitive/method styles and \htnpre from main.tex
+\begin{figure}[htbp]
+  \centering
+  \begin{forest}
+    for tree={
+      font=\small, align=center, inner sep=3pt, rounded corners=2pt,
+      minimum width=1.0cm, minimum height=0.7cm,
+      l sep=0.9cm, s sep=0.5cm,
+      edge={draw=black!60, thick},
+      parent anchor=south, child anchor=north,
+    }
+    [{$T_1$}, compound
+      [{$m_1$\htnpre{$p_1$}}, method
+        [{$t_1$}, primitive]
+        [{$T_2$}, compound
+          [{$m_2$\htnpre{$p_2$}}, method
+            [{$t_2$}, primitive]
+          ]
+          [{$m_3$\htnpre{$\neg p_2$}}, method
+            [{$t_3$}, primitive]
+            [{$t_4$}, primitive]
+          ]
+        ]
+        [{$t_5$}, primitive]
+      ]
+    ]
+  \end{forest}
+
+  \medskip
+  % Legend
+  \begin{tikzpicture}[font=\scriptsize,
+      every node/.style={inner sep=2pt, rounded corners=2pt}]
+    \node[draw, double, fill=blue!8] (c) {compound task};
+    \node[draw, fill=white, right=6pt of c] (p) {primitive task};
+    \node[draw, dashed, fill=orange!8, right=6pt of p] (m) {method (with precondition)};
+  \end{tikzpicture}
+
+  \caption{Generic hierarchical task network.}
+  \label{fig:generic-htn}
+\end{figure}

@@ -1,0 +1,35 @@
+% Input-process-output model -- include with \input{chapters/ipo_model}
+% Needs only TikZ + the positioning library (already loaded via forest in main.tex)
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[
+      >=latex,
+      font=\small,
+      io/.style  ={draw, rounded corners=4pt, minimum width=2.6cm, minimum height=1.1cm},
+      proc/.style={draw, fill=blue!6, minimum width=2.8cm, minimum height=1.1cm},
+      note/.style={font=\scriptsize\itshape, text=black!60, align=center},
+      flow/.style={->, thick},
+    ]
+    \node[io]                    (in)   {Input};
+    \node[proc, right=1.6cm of in]  (proc) {Process};
+    \node[io,   right=1.6cm of proc] (out)  {Output};
+
+    % Side bars: flowchart symbol for a (predefined) process
+    \draw ([xshift=4pt]proc.north west) -- ([xshift=4pt]proc.south west);
+    \draw ([xshift=-4pt]proc.north east) -- ([xshift=-4pt]proc.south east);
+
+    \draw[flow] (in)   -- (proc);
+    \draw[flow] (proc) -- (out);
+
+    % Example sources and sinks
+    \node[note, below=3pt of in]  {e.g.\ sensors,\\sub-systems};
+    \node[note, below=3pt of out] {e.g.\ actuators,\\sub-systems};
+  \end{tikzpicture}
+
+  \caption[Input--process--output model]{%
+    Input--process--output model. The process receives its input from
+    other systems such as sensors and passes its output on to further
+    sub-systems such as actuators. As the only element between input and
+    output, the process is a single point of failure (SPOF).}
+  \label{fig:ipo-model}
+\end{figure}

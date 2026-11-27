@@ -1,0 +1,39 @@
+% Node state machine (UML style) -- include with \input{chapters/node_states}
+% Needs only TikZ + the positioning library (already loaded via forest in main.tex)
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[
+      >=latex,
+      font=\small,
+      state/.style ={draw, thick, rounded corners=8pt, fill=blue!6,
+                     minimum width=2.8cm, minimum height=1.0cm},
+      fail/.style  ={state, fill=red!8, draw=red!60!black},
+      init/.style  ={circle, fill=black, inner sep=0pt, minimum size=9pt},
+      final/.style ={circle, draw, thick, inner sep=0pt, minimum size=13pt,
+                     path picture={\fill (path picture bounding box.center) circle (3.5pt);}},
+      trans/.style ={->, thick},
+      lbl/.style   ={font=\scriptsize\itshape, text=black!70},
+    ]
+    % States
+    \node[state]                       (act)  {Active};
+    \node[init,  above=1.3cm of act]   (ini)  {};
+    \node[final, left=2.6cm of act]    (fin)  {};
+    \node[state, right=3.4cm of act]   (stb)  {Standby};
+    \node[fail,  below=1.8cm of act]   (flt)  {Failure};
+
+    % Transitions
+    \draw[trans] (ini) -- node[lbl, right] {start-up} (act);
+    \draw[trans] (act) -- node[lbl, above] {mission end} (fin);
+    \draw[trans] (act) -- node[lbl, right] {fault detected} (flt);
+    \draw[trans] (flt) -| node[lbl, below, pos=0.25] {recovered} (stb);
+    \draw[trans] (stb) -- node[lbl, above] {reintegrated} (act);
+  \end{tikzpicture}
+
+  \caption[State machine of a redundant node]{%
+    State machine of a redundant node. After start-up the node is
+    \emph{Active}. When a fault is detected it enters \emph{Failure} and is
+    excluded from the redundancy set. Once recovered it waits in
+    \emph{Standby} until it is reintegrated as an active node. The node
+    leaves the state machine when the mission ends.}
+  \label{fig:node-states}
+\end{figure}

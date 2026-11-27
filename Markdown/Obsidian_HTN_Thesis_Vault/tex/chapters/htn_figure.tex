@@ -1,0 +1,47 @@
+% HTN figure (top-down) -- include in a chapter with \input{chapters/htn_figure}
+% Uses the compound/primitive/method styles and \htnpre from main.tex
+\begin{figure}[htbp]
+  \centering
+  \begin{forest}
+    for tree={
+      font=\footnotesize, align=center, inner sep=3pt, rounded corners=2pt,
+      minimum height=0.7cm,
+      l sep=0.8cm, s sep=0.25cm,
+      edge={draw=black!60, thick},
+      parent anchor=south, child anchor=north,
+    }
+    [{\textbf{suppress-enemy-radar}}, compound
+      [{m0: standard SEAD\htnpre{drone ready}}, method
+        [{fly-to-\\area}, primitive]
+        [{find-radar}, compound
+          [{m1: passive\\search\htnpre{radar emitting}}, method
+            [{listen-\\passively}, primitive]
+          ]
+          [{m2: decoy\\search\htnpre{radar silent}}, method
+            [{act-as-\\decoy}, primitive]
+            [{listen-\\passively}, primitive]
+          ]
+        ]
+        [{suppress-\\radar}, primitive]
+        [{check-\\result}, primitive]
+        [{return-to-\\base}, primitive]
+      ]
+    ]
+  \end{forest}
+
+  \medskip
+  % Legend
+  \begin{tikzpicture}[font=\scriptsize,
+      every node/.style={inner sep=2pt, rounded corners=2pt}]
+    \node[draw, double, fill=blue!8] (c) {compound task};
+    \node[draw, fill=white, right=6pt of c] (p) {primitive task};
+    \node[draw, dashed, fill=orange!8, right=6pt of p] (m) {method (with precondition)};
+  \end{tikzpicture}
+
+  \caption{HTN for a SEAD mission. The compound task
+    \textit{suppress-enemy-radar} is decomposed by method \textit{m0} into
+    totally ordered subtasks (left to right). The compound task
+    \textit{find-radar} has two alternative methods; the planner selects
+    the one whose precondition holds in the current state.}
+  \label{fig:htn-sead}
+\end{figure}

@@ -1,0 +1,53 @@
+% HTN decomposition trace (compact) -- include with \input{chapters/htn_trace}
+\begin{table}[htbp]
+  \centering\small
+  \caption{Decomposition trace of the SEAD HTN. Compound tasks (bold) are
+    replaced by the subtasks of the first applicable method; primitive
+    tasks are applied to the state and appended to the plan.}
+  \label{tab:htn-trace}
+  \begin{tabularx}{\linewidth}{@{}c>{\raggedright\arraybackslash}p{0.2\linewidth}>{\raggedright\arraybackslash}p{0.27\linewidth}>{\raggedright\arraybackslash}X@{}}
+    \toprule
+    \multicolumn{4}{@{}l}{$s_0 = \{\htnfact{drone-ready},\ \htnfact{at-base},\ \htnfact{radar-silent}\}$} \\
+    \midrule
+    Step & Task & Precondition & Result \\
+    \midrule
+    1 & \textbf{\htntask{suppress-enemy-radar}}
+      & \textit{m0}: \htnfact{drone-ready}
+      & $\langle$\htntask{fly-to-area}, \htntask{find-radar}, \htntask{suppress-radar},
+        \htntask{check-result}, \htntask{return-to-base}$\rangle$ \\
+    \addlinespace[1.1em]
+    2 & \htntask{fly-to-area}
+      & \htnfact{at-base}
+      & $+$\htnfact{at-area}, $-$\htnfact{at-base} \\
+    \addlinespace[1.1em]
+    3 & \textbf{\htntask{find-radar}}
+      & \textit{m1}: \htnfact{radar-emitting} (fails)\newline
+        \textit{m2}: \htnfact{radar-silent}
+      & $\langle$\htntask{act-as-decoy}, \htntask{listen-passively}$\rangle$ \\
+    \addlinespace[1.1em]
+    4 & \htntask{act-as-decoy}
+      & \htnfact{at-area}
+      & $+$\htnfact{radar-emitting}, $-$\htnfact{radar-silent} \\
+    \addlinespace[1.1em]
+    5 & \htntask{listen-passively}
+      & \htnfact{radar-emitting}
+      & $+$\htnfact{radar-located} \\
+    \addlinespace[1.1em]
+    6 & \htntask{suppress-radar}
+      & \htnfact{radar-located}
+      & $+$\htnfact{radar-suppressed} \\
+    \addlinespace[1.1em]
+    7 & \htntask{check-result}
+      & \htnfact{at-area}
+      & $+$\htnfact{result-checked} \\
+    \addlinespace[1.1em]
+    8 & \htntask{return-to-base}
+      & \htnfact{at-area}
+      & $+$\htnfact{at-base}, $-$\htnfact{at-area} \\
+    \midrule
+    \multicolumn{4}{@{}l}{$\pi = \langle \htntask{fly-to-area},\ \htntask{act-as-decoy},\
+      \htntask{listen-passively},\ \htntask{suppress-radar},\ \htntask{check-result},\
+      \htntask{return-to-base} \rangle$} \\
+    \bottomrule
+  \end{tabularx}
+\end{table}

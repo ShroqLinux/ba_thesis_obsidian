@@ -1,0 +1,106 @@
+\documentclass[12pt,a4paper]{report}
+
+
+% ---------- Packages ----------
+\usepackage[margin=2.5cm,headheight=35pt,headsep=18pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % Safe for pdfLaTeX; harmless on most current setups
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{microtype}
+\graphicspath{ {./images/} }
+\usepackage[backend=biber, style=ieee]{biblatex}
+\addbibresource{bibliography.bib}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\newcommand{\htntask}[1]{\textit{#1}}
+\newcommand{\htnfact}[1]{\texttt{#1}}
+
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage[edges]{forest}   % tree drawing, includes TikZ
+\usetikzlibrary{positioning}
+
+\forestset{
+  htn/.style={
+    for tree={
+      grow'=0, folder, folder indent=0.9em,
+      l sep'=1.2em, s sep=3pt,
+      font=\small, anchor=west, align=left,
+      inner sep=3pt, rounded corners=2pt,
+      edge={draw=black!60},
+    }
+  },
+  compound/.style ={draw, double, fill=blue!8},
+  primitive/.style={draw, fill=white},
+  method/.style   ={draw, dashed, fill=orange!8},
+}
+% precondition line inside a method node
+\newcommand{\htnpre}[1]{\\[-1pt]{\scriptsize\itshape pre: #1}}
+
+\usepackage[hidelinks]{hyperref}
+% ---------- Formatting ----------
+\onehalfspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+
+% ---------- Header ----------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{%
+  \IfFileExists{images/logo.png}{%
+    \includegraphics[height=1.0cm,keepaspectratio]{images/logo.png}%
+  }{}%
+}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Chapter-opening pages use the plain style by default; define it to match.
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyhead[R]{%
+    \IfFileExists{images/logo.png}{%
+      \includegraphics[height=1.0cm,keepaspectratio]{images/logo.png}%
+    }{}%
+  }
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0.4pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+% ---------- Document ----------
+\begin{document}
+
+% Add the university-provided title page and affidavit here, if they are
+% separate .tex files. Keep their official wording/layout unchanged.
+% Example:
+% \input{titlepage}
+% \input{affidavit}
+
+\pagenumbering{roman}
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+
+\include{chapters/introduction}
+
+\include{chapters/background_related_work}
+
+\include{chapters/main_chapters}
+
+\include{chapters/conclusion}
+
+% Add bibliography support here when you choose your citation workflow.
+% For BibTeX, for example:
+% \bibliographystyle{plain}
+% \bibliography{references}
+
+\printbibliography[heading=bibintoc]
+
+\appendix
+% \chapter{Additional Material}
+
+\end{document}

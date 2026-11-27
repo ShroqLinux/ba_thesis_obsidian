@@ -1,0 +1,59 @@
+\chapter{Background and Related Work}
+
+\section{Hierarchical Task Networks}
+Hierarchical Task Network (HTN) is a paradigm in AI planning for automated planning. Classical planning focuses on finding sequence to get from point A to point B, while Hierarchical Task Networks focus on high-level decomposition until high-level tasks become manageable, primitive subtasks \parencite{nau_shop_1999}.
+
+Four key components within HTN are tasks, methods, initial state and a goal. Tasks are the what of the plan. Primitive tasks are basic actions that can be executed in the environment. Non-primitive tasks are compound tasks, these are high-level tasks composed of several primitive tasks. Methods are the how and are the recipe telling the planner how to decompose a specific task into sub-tasks. The initial state describes the world at the beginning. Decomposition is done recursively by the planner and stops when it has found a task set that can be directly performed by planning operators. The goal is itself a compound task and serves as the starting point for decomposition. Two planners that serve as a starting point for an introduction into this subject are SHOP and SHOP2. SHOP is ``Simple Hierarchical Ordered Planner'' which decomposes tasks recursively into directly executable primitive tasks exactly in the order they are to be executed. This significantly reduces complexity in the decision making for task sequences because the planner knows at each step the current state of the world, thus removing uncertainty in planning. SHOP2 adds the possibility of partial ordering where subtasks from different compound tasks can be interleaved which means that the sequence of executing their subtasks is not strictly a total order and can be mixed. In total order, one compound task must be fully decomposed and solved before the next one can be solved by the planner \parencite{nau_shop2_2003}.
+
+There are many more planning techniques which use other methods, e.g.\ probabilistic \parencite{sherkat_two_2025} or heuristics \parencite{georgievski_htn_2015}.
+
+SHOP planners use depth-first search (DFS) algorithm in the traversal of their task trees \parencite{nau_shop_1999}, which provides a deterministic search algorithm when used with a fixed adjacency structure \parencite{lammich_framework_2015} and a fixed starting vertex. An adjacency list, as defined by \textcite{tarjan_depth-first_1971}, contains all vertices $w$ such that $(v,w) \in E$ of a graph $G = (V,E)$ with $V$ vertices and $E$ edges. In other words, an adjacency list contains all the neighbors of one vertex $v \in V$. An adjacency structure contains all adjacency lists of a graph $G$. % Note 9/11
+In practical application, what follows is that a SHOP planner runs a defined list of tasks and methods in an order set during offline development, which may be required when multiple methods must be searched when given a complex initial world state. The reason to use SHOP in this writing is because DFS creates reproducible outcomes under the defined conditions and SHOP's total order imposes a reproducible process in its preceding steps, which aligns in principle to the definition of determinism as defined in ED-124/DO-297 and adopted in \textcite[Sec.~4]{easa_amc20-193_2022} in regard to the repeatability of outcome. There are several options with SHOP for the stopping condition, by default this would be at the first valid solution plan that the planner found or SHOP can be used to explore an entire task tree and return all possible plans for a problem \parencite{nau_shop_1999}. As \textcite{nau_shop2_2003} define, it is possible for SHOP2 to use Branch-and-Bound Optimization where the planner does not stop at the first valid plan that is found. Instead, it searches for a least-cost or optimal plan.
+
+SHOP will be used in the concept development here because of its simplicity in functional logic and is a good fit to serve as an example. A simple example will be defined here to illustrate how a HTN can be defined for a drone and the tasks it must fulfill.
+
+A drone must suppress an enemy radar so friendly aircraft can enter the area.
+
+Tasks: fly to the area, find the radar, suppress it, check the result, return.
+
+Here’s a simple hierarchical task network (HTN) for the scenario. Compound tasks are broken down into subtasks, alternative methods are shown where the drone can achieve a task in different ways.
+
+\input{chapters/htn_figure}
+
+One case will be defined here to demonstrate how the HTN calculates a task plan.
+
+Case: the drone starts at base, ready, and the radar is silent. So the starting state is \{drone-ready, at-base, radar-silent\}, and the planner starts with one task: \textit{suppress-enemy-radar}.
+
+How it works: the planner always takes the first task on its list.
+\begin{itemize}
+\item Compound task: it picks a method whose precondition holds and replaces the task with that method’s subtasks.
+\item Primitive task: it checks the precondition, applies the effects to the state and adds the task to the plan.
+\end{itemize}
+
+\input{chapters/htn_operators}
+
+The next table shows how the HTN breaks down the compound task into a task plan. At the end, only primitive tasks are in the plan to be run.
+
+\input{chapters/htn_trace}
+
+
+\section{Redundancy Engineering}
+
+The goal of a distributed architecture in a broader context is to have some benefit through system capabilities which a single unit solution cannot fulfill. A single HTN system is also a single point of failure (SPOF), this applies to any system that is implemented as only one component. % Note 11/11
+Redundancy engineering is a method to design fault-tolerant systems that can continue their expected normal operation when an error occurs. It must also be clarified here how the terms failure, fault and error are used in redundancy. As it is stated by \textcite[1]{koren_fault-tolerant_2021}, ``A \emph{fault} (or \emph{failure}) can be either a hardware defect or a software/programming mistake (bug). In contrast, an \emph{error} is a manifestation of the fault/failure/bug.'' With any complex software, it is known that there is no software that is ``bug-free'' \parencite{smith_seismology_2018}. This also means that redundant solutions don't aim to fully eliminate a fault in a system and instead are used to compensate for the event of an error or a bug.
+
+There are several redundancy types and the choice depends on the target of a system's design. Here it will first be shortly described what techniques there are and where they are used. As \textcite{steen_distributed_2025} describe, information redundancy is done by adding bits to the data itself to enable recovery and error detection, e.g.\ using Hamming codes or cyclical redundancy check (CRC) \parencite{tsimbalo_fix_2015}. This is more efficient and requires less storage compared to full data replication.
+
+Time redundancy compensates for the effects of transient faults and uses re-executing a program or retransmission of data when an error occurs \parencite{djambazova_redundancy_2023}, e.g., retransmission timeout in TCP communication \parencite{tanenbaum_computer_2003}.
+
+Structural redundancy focuses on adding software or hardware components in two possible ways: hot and cold spares \parencite{djambazova_redundancy_2023}. The extra components are used where primary components fail. Hot spares are ready to use at all times, which can be computationally costly. Cold standby spares become active when a primary fails \parencite{djambazova_redundancy_2023}. Cold nodes would need to be synchronized with data and current state in execution of the active primaries.
+
+Since the writing is focused specifically on HTN in a safety-critical system, the main question here is how coordination can be done effectively for a redundantly designed HTN. This entails relevant components, their capabilities and trade-offs for real-world implementations. The relevance of TMR was mentioned in the introduction already which is why it will be described closer here and used in the concept too.
+
+TMR is a type of M-out-of-N system. These require a minimum of M functional modules in a system that consists of a total of N modules. Each individual module computes an identical process whose results are then compared by a voter. The voter validates the result as `matching' so long as the majority (2 out of 3) produce results that agree. Another term for a TMR is the triplex \parencite{koren_fault-tolerant_2021}.
+
+This means individual faults of a node are masked by the voter and a system sees its operation as `correct' despite it. Two weaknesses can emerge based on this property. If the software or another process (TMR can also be used as a hardware-only system \parencite{mukherjee_triple_2019}) has a fault by design, the voter compares incorrect output as `matching' which it wrongly rates as `correct'. The second problem which will be described here is when a node failure occurs and only two remaining nodes are still operational. In this case, a voter can detect either two matching outputs or differing outputs, but cannot identify which node is faulty due to lack of a majority. Similar problems in lack of majority have been researched \parencite{shin_time_1994}. This will also be considered in the limitations of the concept that will be described later.
+
+An example for structural redundancy is a system using Triple Modular Redundancy (TMR) that can transition to Dual Modular Redundancy (DMR). Upon failure of one redundant node, the system can gracefully degrade to use two of the original three nodes in a cluster \parencite{djambazova_redundancy_2023}.
+
+\input{chapters/tmr_failure}

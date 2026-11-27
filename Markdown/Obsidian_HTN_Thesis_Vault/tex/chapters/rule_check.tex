@@ -1,0 +1,55 @@
+% Rule-set check of the voter result (UML activity diagram)
+% include with \input{chapters/rule_check}
+% Needs only TikZ + the positioning library (already loaded via forest in main.tex)
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[
+      >=latex,
+      font=\small,
+      action/.style  ={draw, thick, rounded corners=6pt, fill=blue!6, align=center,
+                       minimum width=3.4cm, minimum height=0.95cm},
+      good/.style    ={action, fill=green!8},
+      bad/.style     ={action, fill=red!8},
+      init/.style    ={circle, fill=black, inner sep=0pt, minimum size=9pt},
+      final/.style   ={circle, draw, thick, inner sep=0pt, minimum size=13pt,
+                       path picture={\fill (path picture bounding box.center) circle (3.5pt);}},
+      decision/.style={diamond, draw, thick, aspect=1, inner sep=0pt, minimum size=0.9cm},
+      flow/.style    ={->, thick},
+    ]
+    % Nodes
+    \node[init]     (ini)  at (0, 0.0)  {};
+    \node[action]   (res)  at (0,-1.2)  {Voter result\\(task sequence)};
+    \node[action]   (pair) at (0,-2.7)  {Take next pair of\\subsequent tasks $(A, B)$};
+    \node[decision] (d1)   at (0,-4.3)  {};
+    \node[decision] (d2)   at (0,-5.9)  {};
+    \node[good]     (pass) at (0,-7.4)  {Pass:\\use result};
+    \node[final]    (f1)   at (0,-8.6)  {};
+    \node[bad]      (fail) at (4.2,-4.3) {Fail: discard result,\\HTN calculates next task};
+    \node[final]    (f2)   at (4.2,-5.6) {};
+
+    % Decision labels
+    \node[font=\small, anchor=south west] at ([xshift=5pt, yshift=2pt]d1.north)
+      {Rule set allows $A$ before $B$?};
+    \node[font=\small, anchor=west] at ([xshift=4pt]d2.east) {All pairs checked?};
+
+    % Flow
+    \draw[flow] (ini)  -- (res);
+    \draw[flow] (res)  -- (pair);
+    \draw[flow] (pair) -- (d1);
+    \draw[flow] (d1) -- node[above] {no} (fail);
+    \draw[flow] (fail) -- (f2);
+    \draw[flow] (d1) -- node[right] {yes} (d2);
+    \draw[flow] (d2) -- node[right] {yes} (pass);
+    \draw[flow] (pass) -- (f1);
+    % Loop back for the next pair
+    \draw[flow] (d2.west) -- node[above] {no} ++(-2.6,0) |- (pair.west);
+  \end{tikzpicture}
+
+  \caption[Rule-set check of the voter result]{%
+    Rule-set check of the voter result. Each pair of subsequent tasks
+    $(A, B)$ in the voted task sequence is checked against a rule set
+    that defines which tasks may follow each other. A single forbidden
+    pair causes the result to be discarded, and the HTN calculates the
+    next task. The result is only used if every pair passes.}
+  \label{fig:rule-check}
+\end{figure}

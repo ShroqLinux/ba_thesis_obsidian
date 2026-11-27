@@ -1,0 +1,19 @@
+% HTN operator table -- include with \input{chapters/htn_operators}
+% --- Table 1: primitive operators --------------------------------------
+\begin{table}[htbp]
+  \centering\small
+  \caption{Primitive operators of the SEAD domain.}
+  \label{tab:htn-operators}
+  \begin{tabularx}{\linewidth}{@{}l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+    \toprule
+    Operator & Precondition & Effects \\
+    \midrule
+    \htntask{fly-to-area}      & \htnfact{at-base}           & $+$\htnfact{at-area}, $-$\htnfact{at-base} \\
+    \htntask{act-as-decoy}     & \htnfact{at-area}           & $+$\htnfact{radar-emitting}, $-$\htnfact{radar-silent} \\
+    \htntask{listen-passively} & \htnfact{radar-emitting}    & $+$\htnfact{radar-located} \\
+    \htntask{suppress-radar}   & \htnfact{radar-located}     & $+$\htnfact{radar-suppressed} \\
+    \htntask{check-result}     & \htnfact{at-area}           & $+$\htnfact{result-checked} \\
+    \htntask{return-to-base}   & \htnfact{at-area}           & $+$\htnfact{at-base}, $-$\htnfact{at-area} \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
